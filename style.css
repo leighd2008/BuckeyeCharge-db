@@ -6,10 +6,12 @@ body {
 }
 
 .jumbotron {
-  padding-top: 0px;
-  padding-bottom:0px;
+  padding-top: 20px;
+  padding-bottom:20px;
   background-color: grey;
   background-position: bottom;
+  height: 55vw;
+  margin-bottom: 0px;
 }
 
 .cover {
@@ -32,4 +34,8 @@ h2 {
   text-shadow: 3px 2px black;
   max-width: 70%;
   margin: 20px 0 0 20px;
+}
+
+.navbar {
+  border: 5px solid red;
 }

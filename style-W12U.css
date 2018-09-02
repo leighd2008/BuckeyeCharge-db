@@ -1,0 +1,52 @@
+body {
+  background-image: url("images/BCLogo-W12U.png");
+  background-position: 0 160px;
+  background-color: hsla(0,0%,100%,0.80);
+  background-blend-mode: overlay;
+  text-align: center;
+}
+
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom:20px;
+  background-color: grey;
+  background-position: bottom;
+  height: 55vw;
+  margin-bottom: 0px;
+
+}
+
+.cover {
+  height: 50vw;
+  background: url("images/mark-duffel-352915-unsplash.jpg") no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  max-height: 600px;
+  margin:auto;
+  position: relative;
+
+}
+
+h1 {
+ color: red;
+ text-shadow: 3px 5px black;
+}
+
+h2 {
+  color: red;
+  text-shadow: 3px 2px black;
+  max-width: 70%;
+  margin: 20px 0 0 20px;
+}
+
+#photocredit {
+  position: absolute;
+  bottom: 0;
+  margin-left: 70%;
+  z-index: 1;
+  color: white;
+}
+
+.navbar {
+  border: 5px solid red;
+}
