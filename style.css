@@ -1,0 +1,35 @@
+body {
+  background-image: url("images/BCLogo.png");
+  background-color: hsla(0,0%,100%,0.80);
+  background-blend-mode: overlay;
+  text-align: center;
+}
+
+.jumbotron {
+  padding-top: 0px;
+  padding-bottom:0px;
+  background-color: grey;
+  background-position: bottom;
+}
+
+.cover {
+  height: 50vw;
+  background: url("images/softballcrop2.jpg") no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  max-height: 600px;
+  margin:auto;
+
+}
+
+h1 {
+ color: red;
+ text-shadow: 3px 5px black;
+}
+
+h2 {
+  color: red;
+  text-shadow: 3px 2px black;
+  max-width: 70%;
+  margin: 20px 0 0 20px;
+}
