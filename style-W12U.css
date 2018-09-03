@@ -9,10 +9,12 @@ body {
 .jumbotron {
   padding-top: 20px;
   padding-bottom:20px;
-  background-color: grey;
+  background-color: #6c757d;
   background-position: bottom;
   height: 55vw;
   margin-bottom: 0px;
+  border: 5px solid red;
+  border-top: none;
 
 }
 
@@ -29,7 +31,8 @@ body {
 
 h1 {
  color: red;
- text-shadow: 3px 5px black;
+ text-shadow: 3px 3px black;
+ margin-left: 10px;
 }
 
 h2 {
