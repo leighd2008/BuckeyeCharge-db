@@ -53,11 +53,7 @@ const Navigation = () => {
             e("span", { className: "sr-only" }, "(current)")
           )
         ),
-        e(
-          "li",
-          { className: "nav-item" },
-          e("a", { className: "nav-link", href: "#" }, "Link")
-        ),
+
         e(
           "li",
           { className: "nav-item dropdown" },
@@ -98,12 +94,20 @@ const Navigation = () => {
         e(
           "li",
           { className: "nav-item" },
-          e(
-            "a",
-            { className: "nav-link disabled", href: "#" },
-            "Disabled"
+          e("a", { className: "nav-link", href: "#" }, "AB Pitching, Hitting",
+            e("br", null),
+            " and Fitness"
           )
-        )
+        )//,
+        // e(
+        //   "li",
+        //   { className: "nav-item" },
+        //   e(
+        //     "a",
+        //     { className: "nav-link disabled", href: "#" },
+        //     "Disabled"
+        //   )
+        // )
       ),
       e(
         "form",
@@ -116,7 +120,7 @@ const Navigation = () => {
         }),
         e(
           "button",
-          { className: "btn btn-outline-success my-2 my-sm-0", type: "submit" },
+          { className: "btn btn-danger my-2 my-sm-0", type: "submit" },
           "Search"
         )
       )

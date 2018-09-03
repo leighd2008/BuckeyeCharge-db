@@ -18,14 +18,16 @@ body {
   margin-bottom: 0px;
   border: 5px solid red;
   border-top: none;
+  max-height: 350px;
+  
 }
 
 .cover {
   height: 50vw;
   background: url("images/softballcrop2.jpg") no-repeat;
-  background-size: cover;
-  max-width: 1200px;
-  max-height: 600px;
+  background-size: contain;
+  max-width: 750px;
+  max-height: 300px;
   margin:0 auto;
 }
 
@@ -33,6 +35,8 @@ h1 {
  color: red;
  text-shadow: 3px 3px black;
  margin-left: 10px;
+ font-size: 4vw;
+
 }
 
 .mission {
@@ -42,10 +46,10 @@ h1 {
   margin: 20px 0 0 20px;
   position: relative;
   float: left;
-  top: 40%;
+  top: 30%;
   left: 35%;
   transform: translate(-50%, -50%);
-  font-size: 4vw;
+  font-size: 1em;
 }
 
 .navbar {
@@ -54,7 +58,7 @@ h1 {
 
 
 /* Styles for larger screens */
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 520px) {
   .mission {
     color: red;
     text-shadow: 3px 2px black;
@@ -62,8 +66,32 @@ h1 {
     margin: 20px 0 0 20px;
     position: relative;
     float: left;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+  }
+
+@media screen and (min-width: 770px) {
+  h1 {
+   color: red;
+   text-shadow: 3px 3px black;
+   margin-left: 10px;
+   font-size: 3vw;
+
+  }
+
+  .mission {
+    color: red;
+    text-shadow: 3px 2px black;
+    max-width: 70%;
+    margin: 20px 0 0 20px;
+    position: relative;
+    float: left;
     top: 40%;
     left: 35%;
     transform: translate(-50%, -50%);
-    font-size: 3vw;
+    font-size: 2em;
   }
+
+}
