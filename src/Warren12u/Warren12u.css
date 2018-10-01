@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  background-image: url("../images/BCLogo-W12U.png");
+  background-color: hsla(0,0%,100%,0.80) !important;
+  background-blend-mode: overlay;
+}
+
+.lgscreen {
+  display: none;
+}
+
+@media screen and (min-width: 1500px) {
+  .lgscreen {
+    display: flex;
+  }
+
+  .smscreen {
+    display: none;
+  }
+}
