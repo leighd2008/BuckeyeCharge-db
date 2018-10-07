@@ -5,7 +5,8 @@ import HomeField from '../HomeField/HomeField';
 import TeamRoster from '../TeamRoster/TeamRoster';
 import {roster} from './roster'
 import TeamEvents from '../TeamEvents/TeamEvents';
-import {events} from './events'
+
+// import {events} from './events'
 import './Warren12u.css';
 
 import Banner from '../Banner/Banner';
@@ -38,7 +39,7 @@ class Warren12u extends Component {
         <div className='lgscreen' >
           {/* <CardGroup > */}
             <TeamRoster roster={roster} />
-            <TeamEvents events={events} />
+            <TeamEvents />
           {/* </CardGroup> */}
         </div>
         <div className='smscreen' >
@@ -56,7 +57,7 @@ class Warren12u extends Component {
             fieldImage={fieldImage}
           />
           <TeamRoster roster={roster} />
-          <TeamEvents events={events} />
+          <TeamEvents />
         </div>
       </div>
     );

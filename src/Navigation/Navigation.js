@@ -40,90 +40,49 @@ export default class Navigation extends React.Component {
 
     render() {
         const { onRouteChange } = this.props;
-        return ( <
-            div >
-            <
-            Navbar className = "navbar navbar-expand-lg navbar-light bg-secondary" >
-            <
-            NavbarBrand href = "/" >
-            <
-            img src = { BCLogo }
-            width = "60"
-            height = "60"
-            className = "d-inline-block align-top"
-            alt = "BC logo" / > < h1 className = "d-inline-block align-bottom 5ma" > Buckeye Charge Fastpitch Softball < /h1> <
-            /NavbarBrand> <
-            NavbarToggler onClick = { this.toggle }
-            /> <
-            Collapse isOpen = { this.state.isOpen }
-            navbar >
-            <
-            Nav className = "ml-auto"
-            navbar >
-            <
-            NavItem >
-            <
-            NavLink tag = "h5"
-            href = "/" > Home < /NavLink> <
-            /NavItem> <
-            NavItem >
-            <
-            NavLink tag = "h5"
-            href = "/" > AB Pitching, < br / > Hitting and < br / > Fitness < /NavLink> <
-            /NavItem> <
-            UncontrolledDropdown nav inNavbar >
-            <
-            DropdownToggle tag = "h5"
-            nav caret >
-            Teams <
-            /DropdownToggle> <
-            DropdownMenu >
-            <
-            DropdownItem >
-            8 u <
-            /DropdownItem> <
-            DropdownItem >
-            10 u <
-            /DropdownItem> <
-            DropdownItem >
-            11 u <
-            /DropdownItem> <
-            DropdownItem >
-            12 u <
-            /DropdownItem> <
-            DropdownItem onClick = { this.toggle } >
-            <
-            p onClick = {
-                () => onRouteChange('Warren12u', W12uImage, 'Warren12u', '') } >
-            Warren 12 u < /p> <
-            /DropdownItem> <
-            DropdownItem >
-            14 u <
-            /DropdownItem> <
-            DropdownItem >
-            16 u <
-            /DropdownItem> <
-            DropdownItem divider / >
-            <
-            DropdownItem >
-            Reset <
-            /DropdownItem> <
-            /DropdownMenu> <
-            /UncontrolledDropdown> <
-            FormGroup >
-            <
-            Label
-            for = "exampleSearch" > Search < /Label> <
-            Input type = "search"
-            name = "search"
-            id = "exampleSearch"
-            placeholder = "search placeholder" / >
-            <
-            /FormGroup> <
-            /Nav> <
-            /Collapse> <
-            /Navbar> <
-            /div>
-        );
+        return (
+            <div >
+                <Navbar className="navbar navbar-expand-lg navbar-light bg-secondary" >
+                    <NavbarBrand href="/" >
+                        <img src={BCLogo}
+                            width="60"
+                            height="60"
+                            className="d-inline-block align-top"
+                            alt="BC logo" /> <h1 className="d-inline-block align-bottom 5ma" > Buckeye Charge Fastpitch Softball </h1>
+                    </NavbarBrand>
+                    <NavbarToggler onClick={this.toggle} />
+                    <Collapse isOpen={this.state.isOpen} navbar >
+                        <Nav className="ml-auto" navbar >
+                            <NavItem >
+                                <NavLink tag="h5" href="/" > Home </NavLink>
+                            </NavItem>
+                            <NavItem >
+                                <NavLink tag="h5" href="/" > AB Pitching, < br /> Hitting and < br /> Fitness </NavLink>
+                            </NavItem>
+                            <UncontrolledDropdown nav inNavbar >
+                                <DropdownToggle tag="h5" nav caret >Teams </DropdownToggle>
+                                <DropdownMenu >
+                                    <DropdownItem >8 u </DropdownItem>
+                                    <DropdownItem >10 u </DropdownItem>
+                                    <DropdownItem >11 u </DropdownItem>
+                                    <DropdownItem >12 u </DropdownItem>
+                                    <DropdownItem onClick={this.toggle} >
+                                        <p onClick={() => onRouteChange('Warren12u', W12uImage, 'Warren12u', '')} >Warren 12 u </p>
+                                    </DropdownItem>
+                                    <DropdownItem >14 u </DropdownItem>
+                                    <DropdownItem >16 u </DropdownItem>
+                                    <DropdownItem divider />
+                                    <DropdownItem > Reset </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+                            <FormGroup >
+                                <Label for="exampleSearch" > Search </Label>
+                                <Input type="search" name="search" id="exampleSearch" placeholder="search placeholder" />
+                            </FormGroup>
+                        </Nav>
+                    </Collapse>
+                </Navbar>
+            </div>
+        )
     }
 }

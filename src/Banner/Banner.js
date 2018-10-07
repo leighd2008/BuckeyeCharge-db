@@ -6,7 +6,7 @@ const Banner = (props) => {
   return (
     <div >
       <Jumbotron>
-        <h1>{props.teamName}</h1>
+        <h1 className="ma0 pa0">{props.teamName}</h1>
         <div className="cover" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
 
           <h2 className="mission">{props.statement}</h2>

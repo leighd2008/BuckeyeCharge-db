@@ -5,10 +5,11 @@ import './Contact.css';
 const Contact = (props) => {
   return (
     <div >
-      <Card className="ma3 contact" style={{ backgroundColor: '#6c757d', borderColor: 'red', borderWidth: '4px', minWidth: '29vw' }}>
+      <Card className="ma3 contact" style={{ backgroundColor: '#6c757d', 
+      borderColor: 'red', borderWidth: '4px', minWidth: '29vw' }}>
         <CardTitle className="tc" tag="h1">Contact Information</CardTitle>
         <CardText tag="h4">{props.contact1}</CardText>
-        <CardText tag="h4">{props.contact2}</CardText>
+        <CardText className="pa2" tag="h4">{props.contact2}</CardText>
       </Card>
     </div>
   );
