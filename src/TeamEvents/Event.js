@@ -65,11 +65,16 @@ export default ({ event }) => {
       <p>{displayStartDate}</p>
       <p>{event.location}</p>
       <p>{description}</p>
-      <p>
-        <Link href={url} target="_blank">
-          Event Details
-        </Link>
-      </p>
+      {
+        url == undefined
+        ? <p></p>
+        : <p>
+            <Link href={url} target="_blank">
+              Event Details
+            </Link>
+          </p>
+      }
+      
     </div>
   )
 }

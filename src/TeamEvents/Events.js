@@ -38,9 +38,6 @@ compose(
   })
 )(({ events }) => (
   <div>
-    <SectionTitle>
-      UPCOMING EVENTS
-    </SectionTitle>
     <Card>
       {events.map((e, i) =>
         <div key={e.id}>
@@ -48,13 +45,13 @@ compose(
           {i < events.length - 1 && <hr />}
         </div>
       )}
-        <a
-          className="primary-cta"
-          href="https://calendar.google.com/calendar/embed?src=jvadpcjgh5a9u1dgc7j4meu7oo%40group.calendar.google.com&ctz=America%2FNew_York"
-          target="_blank" rel="noopener noreferrer"
-        >
-          Go to Calendar
-        </a>
-     </Card>
+      <a
+        className="primary-cta"
+        href="https://calendar.google.com/calendar/embed?src=jvadpcjgh5a9u1dgc7j4meu7oo%40group.calendar.google.com&ctz=America%2FNew_York"
+        target="_blank" rel="noopener noreferrer"
+      >
+        Go to Calendar
+      </a>
+    </Card>
   </div>
 ))

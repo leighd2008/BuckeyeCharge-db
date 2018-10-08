@@ -16,7 +16,7 @@ const TeamRoster = ({ roster }) => {
           </tr>
         </thead>
         <tbody>
-          {
+          { 
             roster.map((player, i) => {
               return (
                 <tr className="stripe-dark" key={i}>
