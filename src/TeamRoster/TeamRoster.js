@@ -7,9 +7,9 @@ const TeamRoster = ({ roster }) => {
   return (
     <Card className="ma3 roster" style={{ backgroundColor: '#6c757d', borderColor: 'red', borderWidth: '4px', minWidth:'48vw' }}>
       <CardTitle tag="h1">Team Roster</CardTitle>
-      <table className="f3 w-100 mw8 center pa4 ma3">
+      <table className="f4 w-100 mw8 center pa4 ma3" >
         <thead>
-          <tr>
+          <tr >
             <th>Jersey #</th>
             <th>First Name</th>
             <th>Positions</th>
@@ -19,7 +19,7 @@ const TeamRoster = ({ roster }) => {
           {
             roster.map((player, i) => {
               return (
-                <tr key={i}>
+                <tr className="stripe-dark" key={i}>
                   <td>{player.jersey_num}</td>
                   <td>{player.firstName}</td>
                   <td>{player.positions}</td>
