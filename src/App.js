@@ -18,7 +18,7 @@ class App extends Component {
       this.state = initialState
     }
 
-    onRouteChange = (route, image, team, statement) => {
+    onRouteChange = (route, image, team, eventUrls, statement) => {
       if (route === 'home') {
         this.setState(initialState)
       }
@@ -26,11 +26,13 @@ class App extends Component {
         route: route,
         backgroundImage: image,
         teamName: team,
+        eventUrls: eventUrls,
         statement: statement,
       });
     }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <Navigation
@@ -47,6 +49,7 @@ class App extends Component {
             backgroundImage={this.state.backgroundImage}
             teamName={this.state.teamName}
             statement={this.state.statement}
+            eventUrls={this.state.eventUrls}
           />
         }
 

@@ -1,17 +1,8 @@
 import React from 'react'
 import { lifecycle, withState, compose } from 'recompose'
 import styled from 'styled-components'
-import theme from '../theme'
-import eventUrls from '../data/events'
+import eventUrls from '../Warren12u/events'
 import Event from './Event'
-
-let SectionTitle = styled.div`
-  font-family: ${theme.fancyFont};
-  letter-spacing: 2px;
-  display: flex;
-  justify-content: center;
-  padding-top: 35px;
-`
 
 let Card = styled.div`
   padding: 20px;
@@ -47,10 +38,10 @@ compose(
       )}
       <a
         className="primary-cta"
-        href="https://calendar.google.com/calendar/embed?src=jvadpcjgh5a9u1dgc7j4meu7oo%40group.calendar.google.com&ctz=America%2FNew_York"
+        href="https://calendar.google.com/calendar/embed?src=iice2b8m42ns1bn6lk8aj40b1srfdhgi@import.calendar.google.com&ctz=America%2FNew_York"
         target="_blank" rel="noopener noreferrer"
       >
-        Go to Calendar
+       <h1> Go to Calendar </h1>
       </a>
     </Card>
   </div>

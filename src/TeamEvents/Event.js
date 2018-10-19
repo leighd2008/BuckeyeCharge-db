@@ -1,6 +1,5 @@
 import React from "react"
 import styled from 'styled-components'
-// import Color from 'color'
 import theme from '../theme'
 
 const DAYS_OF_WEEK = [
@@ -31,15 +30,10 @@ const MONTHS = [
 let Link = styled.a`
   text-decoration: none;
   color: ${theme.link};
-  ${'' /* &:hover {
-    color: ${Color(theme.link).darken(0.5).rgb().string()};
-  } */}
+  
 `
 
 export default ({ event }) => {
-  let [,,, description,, url] = event.description.split(`\n`)
-  
-  
   
   let startDate = new Date(event.start.dateTime)
   
@@ -54,26 +48,22 @@ export default ({ event }) => {
     minutes = `0${minutes}`
   }
 
-
   let displayStartDate = `${day}, ${month} ${date} at ${hours}:${minutes}${AMPM}`
-  // let url = `http://nodeschool.io/toronto/`
-  
-
   return (
     <div>
-      <h4>{event.summary}</h4>
-      <p>{displayStartDate}</p>
-      <p>{event.location}</p>
-      <p>{description}</p>
-      {
-        url == undefined
+      <h5>{event.summary}</h5>
+      <h5>{displayStartDate}</h5>
+      <h5><Link href={`https://maps.google.com/?q=${event.location}`} target="_blank"> {event.location} </Link></h5>
+      <p>{event.description}</p>
+      {/* {
+        url === undefined
         ? <p></p>
         : <p>
             <Link href={url} target="_blank">
               Event Details
             </Link>
           </p>
-      }
+      } */}
       
     </div>
   )

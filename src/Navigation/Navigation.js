@@ -1,24 +1,9 @@
 import React from 'react';
-// import { Link } from 'react-dom'
 import BCLogo from '../images/BCLogo.png';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  FormGroup,
-  Label,
-  Input
-} from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, FormGroup,Label, Input } from 'reactstrap';
 import './Navigation.css';
 import W12uImage from '../images/team.jpg';
+import W12uUrls from '../Warren12u/events';
 import homeImage from '../images/softballcrop2.jpg';
 
 
@@ -37,7 +22,6 @@ toggle() {
         isOpen: !this.state.isOpen,
     }));
 }
-
 
 render() {
     const { onRouteChange } = this.props;
@@ -58,7 +42,7 @@ render() {
             <Nav className="ml-auto" navbar >
               <NavItem >
                 <NavLink tag="h5" href="/" onClick={this.toggle}>
-                  <h5 onClick={() => onRouteChange('home', homeImage, '', statement)} > Home </h5> 
+                  <p onClick={() => onRouteChange('home', homeImage, '', statement)} > Home </p> 
                 </NavLink>
               </NavItem>
               <NavItem >
@@ -72,7 +56,7 @@ render() {
                   <DropdownItem >11 u </DropdownItem>
                   <DropdownItem >12 u </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
-                      <p onClick={() => onRouteChange('Warren12u', W12uImage, 'Warren12u', '')} >Warren 12 u </p>
+                      <p onClick={() => onRouteChange('Warren12u', W12uImage, 'Warren12u', W12uUrls, '')} >Warren 12 u </p>
                   </DropdownItem>
                   <DropdownItem >14 u </DropdownItem>
                   <DropdownItem >16 u </DropdownItem>
