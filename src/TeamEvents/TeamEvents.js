@@ -6,7 +6,7 @@ import { Card, CardTitle } from 'reactstrap';
 import Events from './Events'
 
 const TeamEvents = ({eventUrls}) => {
-
+  console.log(eventUrls)
     return ( 
       <Card className = "ma3 events"
         style = {

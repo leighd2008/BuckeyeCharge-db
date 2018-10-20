@@ -1,7 +1,6 @@
 import React from 'react'
 import { lifecycle, withState, compose } from 'recompose'
 import styled from 'styled-components'
-import eventUrls from '../Warren12u/events'
 import Event from './Event'
 
 let Card = styled.div`
@@ -9,13 +8,12 @@ let Card = styled.div`
   max-width: 750px;
   margin: 0 auto;
 `
-
 export default
 compose(
   withState(`events`, `addEvent`, []),
-  lifecycle({
+    lifecycle({
     componentDidMount() {
-      Object.values(eventUrls).map(async val => {
+      Object.values(this.props.eventUrls).map(async val => {
         let r = await fetch(val, { mode: `cors` })
         let { items } = await r.json()
         this.props.addEvent(s => [
@@ -24,6 +22,7 @@ compose(
             event.organizer && +Date.now() < +new Date(event.end.dateTime)
           ),
         ].sort((a, b) => +new Date(a.start.dateTime) - +new Date(b.start.dateTime)))
+        
       })
     },
   })
