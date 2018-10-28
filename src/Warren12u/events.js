@@ -4,6 +4,5 @@ let makeGoogleCalendarURL = calID =>
 
 
 export default {
-  warren12U: makeGoogleCalendarURL('jvadpcjgh5a9u1dgc7j4meu7oo@group.calendar.google.com'),  
-  Instateam: makeGoogleCalendarURL(`iice2b8m42ns1bn6lk8aj40b1srfdhgi@import.calendar.google.com`)
+  Instateam: makeGoogleCalendarURL(`cpn7oqq6d7ismvb3mmo9udcnufqp1ov0@import.calendar.google.com`)
 }
