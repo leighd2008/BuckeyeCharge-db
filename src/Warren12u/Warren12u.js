@@ -3,6 +3,7 @@ import fieldImage from '../images/mark-duffel-352915-unsplash2.jpg';
 import Contact from '../Contact/Contact';
 import HomeField from '../HomeField/HomeField';
 import TeamRoster from '../TeamRoster/TeamRoster';
+import TeamPhotos from '../Team Photos/TeamPhotos';
 import {roster} from './roster'
 import TeamEvents from '../TeamEvents/TeamEvents';
 // import eventUrls2 from '../Warren12u/events'
@@ -59,6 +60,8 @@ class Warren12u extends Component {
             fieldImage={fieldImage}
           />
           <TeamRoster roster={roster} />
+          <TeamPhotos  />
+
           <TeamEvents eventUrls={this.props.eventUrls}/>
         </div>
       </div>

@@ -5,6 +5,12 @@ import homeImage from './images/softballcrop2.jpg';
 import Warren12u from './Warren12u/Warren12u';
 import Home from './Home/Home'
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faArrowRight, faArrowLeft);
+
+
 const initialState = {
   backgroundImage: homeImage,
   teamName: "",
