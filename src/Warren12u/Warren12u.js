@@ -6,7 +6,7 @@ import TeamRoster from '../TeamRoster/TeamRoster';
 import TeamPhotos from '../Team Photos/TeamPhotos';
 import {roster} from './roster'
 import TeamEvents from '../TeamEvents/TeamEvents';
-// import eventUrls2 from '../Warren12u/events'
+import ScoreBoard from '../ScoreBoard/ScoreBoard';
 
 
 import './Warren12u.css';
@@ -22,8 +22,6 @@ class Warren12u extends Component {
     const fieldAddress2="Leavittsburg, Ohio 44430"
     const googleMapLink="https://goo.gl/maps/TSZ2T6Ti4oo"
     
-    console.log(this.props.eventUrls)
-
     return (
       <div className="App">
         <div className='lgscreen' >
@@ -43,6 +41,10 @@ class Warren12u extends Component {
         </div>
         <div className='lgscreen' >
             <TeamRoster roster={roster} />
+            <TeamPhotos  />
+        </div>
+        <div className='lgscreen' >
+            <ScoreBoard />
             <TeamEvents eventUrls={this.props.eventUrls} />
         </div>
         <div className='smscreen' >
