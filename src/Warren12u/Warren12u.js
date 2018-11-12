@@ -3,7 +3,7 @@ import fieldImage from '../images/mark-duffel-352915-unsplash2.jpg';
 import Contact from '../Contact/Contact';
 import HomeField from '../HomeField/HomeField';
 import TeamRoster from '../TeamRoster/TeamRoster';
-import TeamPhotos from '../Team Photos/TeamPhotos';
+import TeamPhotos from '../TeamPhotos/TeamPhotos';
 import {roster} from './roster'
 import TeamEvents from '../TeamEvents/TeamEvents';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
