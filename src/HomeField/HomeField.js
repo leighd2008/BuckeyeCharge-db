@@ -5,7 +5,7 @@ import './HomeField.css';
 const HomeField = (props) => {
   return (
     <Card className="ma3 homefield" style={{ backgroundColor: '#6c757d', 
-        borderColor: 'red', borderWidth: '4px', height: '300px'}}>
+        borderColor: 'red', borderWidth: '4px', height: '300px', minWidth: '25vw'}}>
       <CardTitle className="tc" tag="h1">Home Field</CardTitle>
       <CardGroup >
         <Card style={{ backgroundColor: '#6c757d', borderColor: '#6c757d' }}>
@@ -13,8 +13,8 @@ const HomeField = (props) => {
             <CardText tag="h3"><a href={props.googleMapLink} target="_blank" 
                 rel="noopener noreferrer" 
                 className="gmap">{props.fieldName}</a></CardText>
-            <CardText tag="h4">{props.fieldAddress1}</CardText>
-            <CardText tag="h4">{props.fieldAddress2}</CardText>
+            <CardText tag="h5">{props.fieldAddress1}</CardText>
+            <CardText tag="h5">{props.fieldAddress2}</CardText>
           </CardBody>
         </Card>
         <Card className='smscreen' style={{ backgroundColor: '#6c757d', 
