@@ -17,7 +17,7 @@ const HomeField = (props) => {
             <CardText tag="h5">{props.fieldAddress2}</CardText>
           </CardBody>
         </Card>
-        <Card className='smscreen' style={{ backgroundColor: '#6c757d', 
+        <Card  style={{ backgroundColor: '#6c757d', 
             borderColor: '#6c757d' }}>
           <CardBody>
             <p>
