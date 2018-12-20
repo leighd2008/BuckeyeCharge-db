@@ -16,7 +16,7 @@ import Banner from '../Banner/Banner';
 class Warren12u extends Component {
   render() {
     const contact1="Head Coach: Rich Meikle (richmeikle@gmail.com)"
-    const contact2="Assistant Coach: Dennise Brunke-Allen (deebbmt@aol.com)"
+    const contact2="Assistant Coach: Denise Brunke-Allen (deebbmt@aol.com)"
     const fieldName="Johnson Community Center"
     const fieldAddress1="800 Gillmer Rd"
     const fieldAddress2="Leavittsburg, Ohio 44430"

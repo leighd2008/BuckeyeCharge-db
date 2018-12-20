@@ -67,8 +67,8 @@ export const roster = [
   },
   {
     jersey_num: 12,
-    firstName: 'Morgan',
-    lastName: 'Thompson',
+    firstName: 'Maggie',
+    lastName: '',
     positions: 'NON-ROSTER FILL'
   },
   {

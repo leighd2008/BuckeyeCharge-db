@@ -8,7 +8,7 @@ import './Home.css';
 class Home extends Component {
   render() {
     const contact1="Email: buckeyechargefastpitch@gmail.com"
-    const contact2="Phone: xxx-xxx-xxxx"
+    const contact2="Phone: 740-319-1727"
     const fieldName="Jedd Park"
     const fieldAddress1="2275 Pickle Rd"
     const fieldAddress2="Akron, Ohio 44312"

@@ -1,5 +1,5 @@
 import React from 'react';
-import BCLogo from '../images/BCLogo.png';
+import BCLogo from '../images/BCLogo-blk-sml.png';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, FormGroup,Label, Input } from 'reactstrap';
 import './Navigation.css';
 import W12uImage from '../images/team.jpg';
