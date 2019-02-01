@@ -7,7 +7,7 @@ import W12uUrls from '../Warren12u/events';
 import homeImage from '../images/softballcrop2.jpg';
 
 
-export default class Navigation extends React.Component {
+class Navigation extends React.Component {
   constructor(props) {
     super(props);
 
@@ -75,3 +75,5 @@ render() {
     )
   }
 }
+
+export default Navigation;

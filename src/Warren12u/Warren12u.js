@@ -13,8 +13,7 @@ import './Warren12u.css';
 
 import Banner from '../Banner/Banner';
 
-class Warren12u extends Component {
-  render() {
+const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
     const contact1="Head Coach: Rich Meikle (richmeikle@gmail.com)"
     const contact2="Assistant Coach: Denise Brunke-Allen (deebbmt@aol.com)"
     const fieldName="Johnson Community Center"
@@ -22,53 +21,52 @@ class Warren12u extends Component {
     const fieldAddress2="Leavittsburg, Ohio 44430"
     const googleMapLink="https://goo.gl/maps/TSZ2T6Ti4oo"
     
-    return (
-      <div className="App">
-        <div className='lgscreen' >
-          <Contact contact1={contact1} contact2={contact2} />
-          <Banner
-            backgroundImage={this.props.backgroundImage}
-            teamName={this.props.teamName}
-            statement={this.props.statement}
-          />
-          <HomeField
-            fieldName={fieldName}
-            fieldAddress1={fieldAddress1}
-            fieldAddress2={fieldAddress2}
-            googleMapLink={googleMapLink}
-            fieldImage={fieldImage}
-          />
-        </div>
-        <div className='lgscreen' >
-            <TeamRoster roster={roster} />
-            <TeamPhotos  />
-        </div>
-        <div className='lgscreen' >
-            <ScoreBoard />
-            <TeamEvents eventUrls={this.props.eventUrls} />
-        </div>
-        <div className='smscreen' >
-          <Banner
-            backgroundImage={this.props.backgroundImage}
-            teamName={this.props.teamName}
-            statement={this.props.statement}
-          />
-          <Contact contact1={contact1} contact2={contact2} />
-          <HomeField className='homefieldsm'
-            fieldName={fieldName}
-            fieldAddress1={fieldAddress1}
-            fieldAddress2={fieldAddress2}
-            googleMapLink={googleMapLink}
-            fieldImage={fieldImage}
-          />
+  return (
+    <div className="App">
+      <div className='lgscreen' >
+        <Contact contact1={contact1} contact2={contact2} />
+        <Banner
+          backgroundImage={backgroundImage}
+          teamName={teamName}
+          statement={statement}
+        />
+        <HomeField
+          fieldName={fieldName}
+          fieldAddress1={fieldAddress1}
+          fieldAddress2={fieldAddress2}
+          googleMapLink={googleMapLink}
+          fieldImage={fieldImage}
+        />
+      </div>
+      <div className='lgscreen' >
           <TeamRoster roster={roster} />
           <TeamPhotos  />
-
-          <TeamEvents eventUrls={this.props.eventUrls}/>
-        </div>
       </div>
-    );
-  }
+      <div className='lgscreen' >
+          <ScoreBoard />
+          <TeamEvents eventUrls={eventUrls} />
+      </div>
+      <div className='smscreen' >
+        <Banner
+          backgroundImage={backgroundImage}
+          teamName={teamName}
+          statement={statement}
+        />
+        <Contact contact1={contact1} contact2={contact2} />
+        <HomeField className='homefieldsm'
+          fieldName={fieldName}
+          fieldAddress1={fieldAddress1}
+          fieldAddress2={fieldAddress2}
+          googleMapLink={googleMapLink}
+          fieldImage={fieldImage}
+        />
+        <TeamRoster roster={roster} />
+        <TeamPhotos  />
+
+        <TeamEvents eventUrls={eventUrls}/>
+      </div>
+    </div>
+  );
 }
 
 export default Warren12u;

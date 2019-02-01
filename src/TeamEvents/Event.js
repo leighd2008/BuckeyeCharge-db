@@ -33,8 +33,7 @@ let Link = styled.a`
   
 `
 
-export default ({ event }) => {
-  
+const Event = ({ event }) => {
   let startDate = new Date(event.start.dateTime)
   
   let day = DAYS_OF_WEEK[startDate.getDay()]
@@ -55,16 +54,8 @@ export default ({ event }) => {
       <h5>{displayStartDate}</h5>
       <h5><Link href={`https://maps.google.com/?q=${event.location}`} target="_blank"> {event.location} </Link></h5>
       <p>{event.description}</p>
-      {/* {
-        url === undefined
-        ? <p></p>
-        : <p>
-            <Link href={url} target="_blank">
-              Event Details
-            </Link>
-          </p>
-      } */}
-      
     </div>
   )
 }
+
+export default Event;

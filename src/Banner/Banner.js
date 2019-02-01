@@ -2,14 +2,14 @@ import React from 'react';
 import { Jumbotron } from 'reactstrap';
 import './Banner.css';
 
-const Banner = (props) => {
+const Banner = ({ teamName, backgroundImage, statement }) => {
   return (
     <div >
       <Jumbotron>
-        <h1 className="ma0 pa0">{props.teamName}</h1>
-        <div className="cover" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
+        <h1 className="ma0 pa0">{teamName}</h1>
+        <div className="cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
 
-          <h2 className="mission">{props.statement}</h2>
+          <h2 className="mission">{statement}</h2>
         </div>
       </Jumbotron>
     </div>

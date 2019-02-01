@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardTitle, CardText, CardBody, CardGroup } from 'reactstrap';
 import './HomeField.css';
 
-const HomeField = (props) => {
+const HomeField = ({ googleMapLink, fieldName, fieldAddress1, fieldAddress2, fieldImage }) => {
   return (
     <Card className="ma3 homefield" style={{ backgroundColor: '#6c757d', 
         borderColor: 'red', borderWidth: '4px', height: '300px', minWidth: '25vw'}}>
@@ -10,21 +10,21 @@ const HomeField = (props) => {
       <CardGroup >
         <Card style={{ backgroundColor: '#6c757d', borderColor: '#6c757d' }}>
           <CardBody>
-            <CardText tag="h3"><a href={props.googleMapLink} target="_blank" 
+            <CardText tag="h3"><a href={googleMapLink} target="_blank" 
                 rel="noopener noreferrer" 
-                className="gmap">{props.fieldName}</a></CardText>
-            <CardText tag="h5">{props.fieldAddress1}</CardText>
-            <CardText tag="h5">{props.fieldAddress2}</CardText>
+                className="gmap">{fieldName}</a></CardText>
+            <CardText tag="h5">{fieldAddress1}</CardText>
+            <CardText tag="h5">{fieldAddress2}</CardText>
           </CardBody>
         </Card>
         <Card  style={{ backgroundColor: '#6c757d', 
             borderColor: '#6c757d' }}>
           <CardBody>
             <p>
-              <a href={props.googleMapLink} target="_blank" 
+              <a href={googleMapLink} target="_blank" 
                   rel="noopener noreferrer" 
                   className="gmap">
-                  <img src={props.fieldImage} alt="home field"/>
+                  <img src={fieldImage} alt="home field"/>
                     
                   <br/>Click for Directions
               </a>
