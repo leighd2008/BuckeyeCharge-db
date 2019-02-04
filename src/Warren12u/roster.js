@@ -60,12 +60,6 @@ export const roster = [
     positions: 'RF, 2B, PR'
   },
   {
-    jersey_num: 12,
-    firstName: 'Maggie',
-    lastName: '',
-    positions: 'LF, CF, RF, 2B'
-  },
-  {
     jersey_num: 'BG',
     firstName: 'Lexi',
     lastName: '',

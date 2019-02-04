@@ -34,20 +34,30 @@ let Link = styled.a`
 `
 
 const Event = ({ event }) => {
-  let startDate = new Date(event.start.dateTime)
-  
-  let day = DAYS_OF_WEEK[startDate.getDay()]
-  let month = MONTHS[startDate.getMonth()]
-  let date = startDate.getDate()
-  let hours = startDate.getHours() % 12
-  let minutes = startDate.getMinutes()
-  let AMPM = startDate.getHours() < 12 ? `AM` : `PM`
+  let displayStartDate = '';
+  if (event.start.dateTime) {
+    let startDate = new Date(event.start.dateTime)
+    let day = DAYS_OF_WEEK[startDate.getDay()]
+    let month = MONTHS[startDate.getMonth()]
+    let date = startDate.getDate()
+    let hours = startDate.getHours() % 12
+    let minutes = startDate.getMinutes()
+    let AMPM = startDate.getHours() < 12 ? `AM` : `PM`
 
-  if (minutes <= 10) {
-    minutes = `0${minutes}`
+    if (minutes <= 10) {
+      minutes = `0${minutes}`
+    }
+
+    displayStartDate = `${day}, ${month} ${date} at ${hours}:${minutes}${AMPM}`
+
+  } else {
+    let startDate = new Date(event.start.date)
+    let day = DAYS_OF_WEEK[startDate.getDay()]
+    let month = MONTHS[startDate.getMonth()]
+    let date = startDate.getDate()
+
+    displayStartDate = `${day}, ${month} ${date} `
   }
-
-  let displayStartDate = `${day}, ${month} ${date} at ${hours}:${minutes}${AMPM}`
   return (
     <div>
       <h5>{event.summary}</h5>
