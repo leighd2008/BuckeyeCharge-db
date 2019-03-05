@@ -30,7 +30,6 @@ const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
         />
       <div  >
         <Contact contact1={contact1} contact2={contact2} />
-        
         <HomeField
           fieldName={fieldName}
           fieldAddress1={fieldAddress1}

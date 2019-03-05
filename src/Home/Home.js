@@ -1,10 +1,11 @@
 import React from 'react';
+import { Jumbotron } from 'reactstrap';
 import Contact from '../Contact/Contact';
 import fieldImage from '../images/mark-duffel-352915-unsplash2.jpg';
 import HomeField from '../HomeField/HomeField';
 import './Home.css';
 
-const Home = ({ homeImage, backgroundImage, teamName, statement }) => {
+const Home = ({ homeImage }) => {
   const contact1="Email: buckeyechargefastpitch@gmail.com"
   const contact2="Phone: 740-319-1727"
   const fieldName="Jedd Park"
@@ -13,7 +14,8 @@ const Home = ({ homeImage, backgroundImage, teamName, statement }) => {
   const googleMapLink="https://goo.gl/maps/a9NZ6ZDooJm"
   return (
     <div className="App">
-      
+      <Jumbotron style={{ backgroundImage: `url(${homeImage})`, width: '40vw', height: '40vw', maxWidth: '600px', maxHeight: '600px', border: 'none' }}> 
+      </Jumbotron>
       <div  >
         <Contact contact1={contact1} contact2={contact2} />
         <HomeField

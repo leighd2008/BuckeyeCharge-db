@@ -3,7 +3,6 @@ import './App.css';
 import Navigation from './Navigation/Navigation';
 import homeImage from './images/BCLogo-clr.png';
 import Warren12u from './Warren12u/Warren12u';
-import { Jumbotron } from 'reactstrap';
 import Home from './Home/Home'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -46,14 +45,11 @@ class App extends Component {
         <Navigation
           onRouteChange={this.onRouteChange}
         />
-        <Jumbotron style={{ backgroundImage: `url(${homeImage})`, width: '40vw', height: '40vw', maxWidth: '600px', maxHeight: '600px', border: 'none' }}> 
-        </Jumbotron>
         { this.state.route === 'home'
           ?<div>
             <Home homeImage={this.state.homeImage}/>
           </div>
           : <Warren12u
-            homeImage={this.state.homeImage}
             backgroundImage={this.state.backgroundImage}
             teamName={this.state.teamName}
             statement={this.state.statement}
