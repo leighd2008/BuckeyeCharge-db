@@ -1,3 +1,7 @@
+h4 {
+  font-size: 4vw !important;
+}
+
 h4, h1 {
  color: red !important;
  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -6,5 +10,12 @@ h4, h1 {
 .navbar {
   border: 5px solid red;
   top:0;
+  width: 100%;
   z-index: 199;
+}
+
+@media screen and (min-width: 400px) {
+  h4 {
+    font-size: unset !important;
+  }
 }
