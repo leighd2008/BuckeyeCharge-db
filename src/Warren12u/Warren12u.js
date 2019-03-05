@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import fieldImage from '../images/mark-duffel-352915-unsplash2.jpg';
 import Contact from '../Contact/Contact';
 import HomeField from '../HomeField/HomeField';
@@ -23,13 +23,14 @@ const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
     
   return (
     <div className="App">
-      <div className='lgscreen' >
-        <Contact contact1={contact1} contact2={contact2} />
-        <Banner
+      <Banner
           backgroundImage={backgroundImage}
           teamName={teamName}
           statement={statement}
         />
+      <div  >
+        <Contact contact1={contact1} contact2={contact2} />
+        
         <HomeField
           fieldName={fieldName}
           fieldAddress1={fieldAddress1}
@@ -38,32 +39,13 @@ const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
           fieldImage={fieldImage}
         />
       </div>
-      <div className='lgscreen' >
+      <div>
           <TeamRoster roster={roster} />
           <TeamPhotos  />
       </div>
-      <div className='lgscreen' >
+      <div >
           <ScoreBoard />
           <TeamEvents eventUrls={eventUrls} />
-      </div>
-      <div className='smscreen' >
-        <Banner
-          backgroundImage={backgroundImage}
-          teamName={teamName}
-          statement={statement}
-        />
-        <Contact contact1={contact1} contact2={contact2} />
-        <HomeField className='homefieldsm'
-          fieldName={fieldName}
-          fieldAddress1={fieldAddress1}
-          fieldAddress2={fieldAddress2}
-          googleMapLink={googleMapLink}
-          fieldImage={fieldImage}
-        />
-        <TeamRoster roster={roster} />
-        <TeamPhotos  />
-
-        <TeamEvents eventUrls={eventUrls}/>
       </div>
     </div>
   );

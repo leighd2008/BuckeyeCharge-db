@@ -16,14 +16,12 @@ compose(
       Object.values(this.props.eventUrls).map(async val => {
         let r = await fetch(val, { mode: `cors` })
         let { items } = await r.json()
-        console.log('events', items);
         this.props.addEvent(s => [
           ...s,
           ...(items || []).filter(event =>
             event.organizer && +Date.now() < +new Date(event.end.dateTime || event.end.date) 
           ),
         ].sort((a, b) => +new Date(a.start.dateTime || a.start.date) - +new Date(b.start.dateTime || b.start.date)))
-        // console.log('eventsF', items);
       })
     },
   })

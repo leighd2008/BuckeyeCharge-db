@@ -3,7 +3,6 @@ import './TeamEvents.css';
 import { Card, CardTitle } from 'reactstrap';
 import Scroll from '../Scroll';
 
-// import Splash from './Splash'
 import Events from './Events'
 
 const TeamEvents = ({eventUrls}) => {

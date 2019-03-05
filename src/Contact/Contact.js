@@ -5,11 +5,10 @@ import './Contact.css';
 const Contact = ({ contact1, contact2 }) => {
   return (
     <div >
-      <Card className="ma3 contact" style={{ backgroundColor: '#6c757d', 
-      borderColor: 'red', borderWidth: '4px', minWidth: '25vw' }}>
+      <Card className="contact" >
         <CardTitle className="tc" tag="h1">Contact Information</CardTitle>
-        <CardText tag="h4">{contact1}</CardText>
-        <CardText className="pa2" tag="h4">{contact2}</CardText>
+        <CardText tag="h3">{contact1}</CardText>
+        <CardText className="pa2" tag="h3">{contact2}</CardText>
       </Card>
     </div>
   );

@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-// import Slide from './slide'
-// import LeftArrow from './left-arrow'
-// import RightArrow from './right-arrow'
-// import Dots from './dots';
-
 import './TeamPhotos.css';
 import { Card, CardTitle } from 'reactstrap';
 
@@ -29,7 +24,6 @@ class TeamPhotos extends Component {
     return (
       <Card className="ma3 photos" style={{ backgroundColor: '#6c757d', borderColor: 'red', borderWidth: '4px', minWidth: '48vw' }}>
         <CardTitle tag="h1">Team Photos</CardTitle>
-        {/* <script src="https://www.publicalbum.org/js/pa-embed-player.min.js" async></script> */}
         <div className="pa-embed-player" style={{width:'100%', height:'480px', display:'none'}}
           data-link="https://photos.app.goo.gl/4psUET8HhY1pLvfD6"
           data-title="Warren 12U Buckeye Charge"

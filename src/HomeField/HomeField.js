@@ -4,11 +4,10 @@ import './HomeField.css';
 
 const HomeField = ({ googleMapLink, fieldName, fieldAddress1, fieldAddress2, fieldImage }) => {
   return (
-    <Card className="ma3 homefield" style={{ backgroundColor: '#6c757d', 
-        borderColor: 'red', borderWidth: '4px', height: '300px', minWidth: '25vw'}}>
+    <Card className="homefield">
       <CardTitle className="tc" tag="h1">Home Field</CardTitle>
       <CardGroup >
-        <Card style={{ backgroundColor: '#6c757d', borderColor: '#6c757d' }}>
+        <Card style={{ backgroundColor: '#6c757d00', borderColor: '#6c757d00' }}>
           <CardBody>
             <CardText tag="h3"><a href={googleMapLink} target="_blank" 
                 rel="noopener noreferrer" 
@@ -17,8 +16,8 @@ const HomeField = ({ googleMapLink, fieldName, fieldAddress1, fieldAddress2, fie
             <CardText tag="h5">{fieldAddress2}</CardText>
           </CardBody>
         </Card>
-        <Card  style={{ backgroundColor: '#6c757d', 
-            borderColor: '#6c757d' }}>
+        <Card  style={{ backgroundColor: '#6c757d00', 
+            borderColor: '#6c757d00' }}>
           <CardBody>
             <p>
               <a href={googleMapLink} target="_blank" 

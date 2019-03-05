@@ -5,12 +5,8 @@ import './Banner.css';
 const Banner = ({ teamName, backgroundImage, statement }) => {
   return (
     <div >
-      <Jumbotron>
+      <Jumbotron style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className="ma0 pa0">{teamName}</h1>
-        <div className="cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
-
-          <h2 className="mission">{statement}</h2>
-        </div>
       </Jumbotron>
     </div>
   );
