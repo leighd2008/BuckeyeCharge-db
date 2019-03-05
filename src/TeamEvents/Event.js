@@ -61,9 +61,9 @@ const Event = ({ event }) => {
   }
   return (
     <div>
-      <h5>{event.summary}</h5>
-      <h5>{displayStartDate}</h5>
-      <h5><Link href={`https://maps.google.com/?q=${event.location}`} target="_blank"> {event.location} </Link></h5>
+      <h6>{event.summary}</h6>
+      <h6>{displayStartDate}</h6>
+      <h6><Link href={`https://maps.google.com/?q=${event.location}`} target="_blank"> {event.location} </Link></h6>
       <p>{event.description}</p>
     </div>
   )
