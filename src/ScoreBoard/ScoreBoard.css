@@ -11,7 +11,10 @@
     max-width: 728px;
   }
   
-  .smscreen {
-    display: none;
+  .lgscreen {
+    display: flex;
   }
+  /* .smscreen {
+    display: none;
+  } */
 }
