@@ -41,14 +41,14 @@ render() {
           <Collapse isOpen={this.state.isOpen} navbar >
             <Nav className="ml-auto" navbar >
               <NavItem >
-                <NavLink tag="h5" href="/" onClick={this.toggle}>
+                <NavLink tag="h6" href="/" onClick={this.toggle}>
                   <p onClick={() => onRouteChange('home', homeImage, '', statement)} >
                     <br/> HOME 
                   </p> 
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar >
-                <DropdownToggle tag="h5" nav caret ><br/>TEAMS </DropdownToggle>
+                <DropdownToggle tag="h6" nav caret ><br/>TEAMS </DropdownToggle>
                 <DropdownMenu >
                   <DropdownItem >8 u </DropdownItem>
                   <DropdownItem >10 u </DropdownItem>
@@ -65,27 +65,27 @@ render() {
                   <DropdownItem > Reset </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavLink tag="h5" href="/" onClick={this.toggle}>
+              <NavLink tag="h6" href="/" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('home', homeImage, '', statement)} >
                   <br/> TOURNAMENTS 
                 </p> 
               </NavLink>
-              <NavLink tag="h5" href="/" onClick={this.toggle}>
+              <NavLink tag="h6" href="/" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('home', homeImage, '', statement)} >
                   <br/> SPONSORS 
                 </p> 
               </NavLink>
-              <NavLink tag="h5" href="/" onClick={this.toggle}>
+              <NavLink tag="h6" href="/" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('home', homeImage, '', statement)} >
                   <br/> TRAINING 
                 </p> 
               </NavLink>
-              <NavLink tag="h5" href="/" onClick={this.toggle}>
+              <NavLink tag="h6" href="/" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('home', homeImage, '', statement)} >
                   <br/> TRY-OUTS 
                 </p> 
               </NavLink>
-              <NavLink tag="h5" href="/" onClick={this.toggle}>
+              <NavLink tag="h6" href="/" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('home', homeImage, '', statement)} >
                   AB Pitching,<br/> Hitting <br/>and Fitness 
                 </p> 

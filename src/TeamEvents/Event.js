@@ -34,6 +34,7 @@ let Link = styled.a`
 `
 
 const Event = ({ event }) => {
+  console.log(event)
   let displayStartDate = '';
   if (event.start.dateTime) {
     let startDate = new Date(event.start.dateTime)

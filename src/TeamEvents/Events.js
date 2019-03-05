@@ -37,7 +37,7 @@ compose(
       )}
       <a
         className="primary-cta"
-        href="https://calendar.google.com/calendar/embed?src=iice2b8m42ns1bn6lk8aj40b1srfdhgi@import.calendar.google.com&ctz=America%2FNew_York"
+        href="https://calendar.google.com/calendar/embed?src=54b2hk3u19l9j12ovjo020h7mj9hed83@import.calendar.google.com&ctz=America%2FNew_York"
         target="_blank" rel="noopener noreferrer"
       >
        <h1> Go to Calendar </h1>
