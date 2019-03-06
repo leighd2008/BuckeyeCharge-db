@@ -7,10 +7,10 @@ h5 {
   border: 5px solid #6c757d !important;
   border: none !important;
   max-width: 800px;
-  margin: 10px auto !important;
+  margin: auto !important;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
   h5 {
     font-size: 30px !important;
   }
