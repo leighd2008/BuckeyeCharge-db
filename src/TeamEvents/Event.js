@@ -34,14 +34,19 @@ let Link = styled.a`
 `
 
 const Event = ({ event }) => {
-  console.log(event)
   let displayStartDate = '';
   if (event.start.dateTime) {
     let startDate = new Date(event.start.dateTime)
     let day = DAYS_OF_WEEK[startDate.getDay()]
     let month = MONTHS[startDate.getMonth()]
     let date = startDate.getDate()
-    let hours = startDate.getHours() % 12
+    let hours = 1
+    if(startDate.getHours() === 12) {
+      hours = 1
+    } else {
+      hours = startDate.getHours() % 12
+    }
+
     let minutes = startDate.getMinutes()
     let AMPM = startDate.getHours() < 12 ? `AM` : `PM`
 
