@@ -10,12 +10,23 @@ h4, h1 {
 .navbar {
   border: 5px solid red;
   top:0;
-  width: 100%;
+  width: 100vw;
+  margin: 0 0 0 0;
+  padding: 0 !important;
   z-index: 199;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
   h4 {
     font-size: unset !important;
   }
+  .navbar {
+    border: 5px solid red;
+    top:0;
+    width: 98.5vw;
+    margin: 0 0 0 0;
+    padding: 0 !important;
+    z-index: 199;
+  }
+  
 }
