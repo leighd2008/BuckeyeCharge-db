@@ -27,7 +27,6 @@ compose(
   })
 )(({ events }) => (
   <div>
-  {console.log('events', events)}
     <Card>
       {events.map((e, i) =>
         <div key={e.id}>
