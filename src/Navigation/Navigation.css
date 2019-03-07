@@ -10,7 +10,7 @@ h4, h1 {
 .navbar {
   border: 5px solid red;
   top:0;
-  width: 96vw;
+  width: 100vw;
   margin: 0 0;
   padding: 0 !important;
   z-index: 199;
