@@ -7,8 +7,8 @@ const Contact = ({ contact1, contact2 }) => {
     <div >
       <Card className="contact" >
         <CardTitle className="tc" tag="h1">Contact Information</CardTitle>
-        <CardText tag="h5">{contact1}</CardText>
-        <CardText className="pa2" tag="h5">{contact2}</CardText>
+        <CardText tag="h2">{contact1}</CardText>
+        <CardText className="pa2" tag="h2">{contact2}</CardText>
       </Card>
     </div>
   );

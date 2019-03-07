@@ -1,6 +1,6 @@
-h4 {
+/* h4 {
   font-size: 4vw !important;
-}
+} */
 
 h4, h1 {
  color: red !important;
@@ -10,13 +10,13 @@ h4, h1 {
 .navbar {
   border: 5px solid red;
   top:0;
-  width: 100vw;
+  width: 100%;
   margin: 0 0;
   padding: 0 !important;
   z-index: 199;
 }
 
-@media screen and (min-width: 850px) {
+/* @media screen and (min-width: 850px) {
   h4 {
     font-size: unset !important;
   }
@@ -29,4 +29,4 @@ h4, h1 {
     z-index: 199;
   }
   
-}
+} */

@@ -12,8 +12,8 @@ const HomeField = ({ googleMapLink, fieldName, fieldAddress1, fieldAddress2, fie
             <CardText tag="h3"><a href={googleMapLink} target="_blank" 
                 rel="noopener noreferrer" 
                 className="gmap">{fieldName}</a></CardText>
-            <CardText tag="h5">{fieldAddress1}</CardText>
-            <CardText tag="h5">{fieldAddress2}</CardText>
+            <CardText tag="h2">{fieldAddress1}</CardText>
+            <CardText tag="h2">{fieldAddress2}</CardText>
           </CardBody>
         </Card>
         <Card  style={{ backgroundColor: '#6c757d00', 

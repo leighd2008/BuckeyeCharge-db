@@ -9,7 +9,7 @@ import TeamEvents from '../TeamEvents/TeamEvents';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
 
 
-import './Warren12u.css';
+// import './Warren12u.css';
 
 import Banner from '../Banner/Banner';
 

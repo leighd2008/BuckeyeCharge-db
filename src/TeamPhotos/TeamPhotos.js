@@ -26,7 +26,7 @@ class TeamPhotos extends Component {
         <CardTitle tag="h1">Team Photos</CardTitle>
         <div className="pa-embed-player" style={{width:'100%', height:'480px', display:'none'}}
           data-link="https://photos.app.goo.gl/4psUET8HhY1pLvfD6"
-          data-title="Warren 12U Buckeye Charge"
+          data-title=" "
           data-descrition="1173 new photos added to shared album">
           <img data-src="https://lh3.googleusercontent.com/Z5iS0lmsCn3T-c58EFl6CNnNZWlyHTNf6VNw_OgwTto4-ECJY7J3ULUyrQCRRteQKb1HvZG8wSeZsYma6XoWXNuOlm85c12BjBELS5vuOKQ73JWUa9iZS_pZJc580j5-McBxXHp1SA=w1920-h1080" src="" alt="" />
           <img data-src="https://lh3.googleusercontent.com/K2J4rCk80j5D671LTxVhFFMppymTZK-wDPfK4RyqK9O8eHUsR5hSPn2WUKWDT6mvz-IF53PCNMVf8ZTNY3BMGzlUDL1eyEdDH_vA7AbJADIKPAeZRuEclthAmphw-rSi9INnUTxhhw=w1920-h1080" src="" alt="" />
