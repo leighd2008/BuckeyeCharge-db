@@ -2,8 +2,8 @@ import React from 'react';
 import BCLogo from '../images/BCLogo-blk-sml.png';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './Navigation.css';
-import W12uImage from '../images/team.jpg';
-import W12uUrls from '../Warren12u/events';
+import W12UImage from '../images/team.jpg';
+import W12UUrls from '../Warren12U/events';
 import homeImage from '../images/softballcrop2.jpg';
 
 
@@ -50,17 +50,38 @@ render() {
               <UncontrolledDropdown nav inNavbar >
                 <DropdownToggle tag="h6" nav caret ><br/>TEAMS </DropdownToggle>
                 <DropdownMenu >
-                  <DropdownItem >8 u </DropdownItem>
-                  <DropdownItem >10 u </DropdownItem>
-                  <DropdownItem >11 u </DropdownItem>
-                  <DropdownItem >12 u </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
-                      <p onClick={() => onRouteChange('Warren12u', W12uImage, 
-                        'Warren12u', W12uUrls, '')} >Warren 12 u 
-                      </p>
+                    <p onClick={() => onRouteChange('Cholley16U', W12UImage, 
+                      'Cholley16U', W12UUrls, '')} >Cholley 16U</p>
                   </DropdownItem>
-                  <DropdownItem >14 u </DropdownItem>
-                  <DropdownItem >16 u </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => onRouteChange('Cavanagh16U', W12UImage, 
+                      'Cavanagh16U', W12UUrls, '')} >Cavanagh 16U</p>
+                  </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => onRouteChange('Gardner14U', W12UImage, 
+                      'Gardner14U', W12UUrls, '')} >Gardner 14U</p>
+                  </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => onRouteChange('Yoder14U', W12UImage, 
+                      'Yoder14U', W12UUrls, '')} >Yoder 14U</p>
+                  </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => onRouteChange('Norman12U', W12UImage, 
+                      'Norman12U', W12UUrls, '')} >Norman 12U</p>
+                  </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => onRouteChange('Warren12U', W12UImage, 
+                      'Warren12U', W12UUrls, '')} >Warren 12U</p>
+                  </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => onRouteChange('Gressman11U', W12UImage, 
+                      'Gressman11U', W12UUrls, '')} >Gressamn 11U</p>
+                  </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => onRouteChange('Albertson10U', W12UImage, 
+                      'Albertson10U', W12UUrls, '')} >Albertson10U</p>
+                  </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem > Reset </DropdownItem>
                 </DropdownMenu>

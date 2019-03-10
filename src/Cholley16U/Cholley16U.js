@@ -9,17 +9,17 @@ import TeamEvents from '../TeamEvents/TeamEvents';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
 
 
-// import './Warren12u.css';
+// import './Cholley16U.css';
 
 import Banner from '../Banner/Banner';
 
-const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
-    const contact1="Head Coach: Rich Meikle (richmeikle@gmail.com)"
-    const contact2="Assistant Coach: Denise Brunke-Allen (deebbmt@aol.com)"
-    const fieldName="Johnson Community Center"
-    const fieldAddress1="800 Gillmer Rd"
-    const fieldAddress2="Leavittsburg, Ohio 44430"
-    const googleMapLink="https://goo.gl/maps/TSZ2T6Ti4oo"
+const Cholley16U = ({ backgroundImage, teamName, statement, eventUrls }) => {
+    const contact1="Head Coach: Mark Cholley (buckeyechargefastpitch@gmail.com)"
+    const contact2="Phone: 740-319-1727"
+    const fieldName="Jedd Park"
+    const fieldAddress1="2275 Pickle Rd"
+    const fieldAddress2="Akron, Ohio 44312"
+    const googleMapLink="https://goo.gl/maps/a9NZ6ZDooJm"
     
   return (
     <div className="App">
@@ -50,4 +50,4 @@ const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
   );
 }
 
-export default Warren12u;
+export default Cholley16U;
