@@ -45,13 +45,13 @@ export const roster = [
     jersey_num: 3,
     firstName: "Brooklyn",
     lastName: "",
-    positions: ""
+    positions: "3B, OF"
   },
   {
-    jersey_num: 3,
+    jersey_num: 16,
     firstName: "Chloe",
     lastName: "",
-    positions: ""
+    positions: "2B, U, P"
   },
   {
     jersey_num: "BG",

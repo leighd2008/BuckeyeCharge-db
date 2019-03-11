@@ -4,29 +4,31 @@ import Contact from '../Contact/Contact';
 import HomeField from '../HomeField/HomeField';
 import TeamRoster from '../TeamRoster/TeamRoster';
 import TeamPhotos from '../TeamPhotos/TeamPhotos';
+import {teamData} from './teamData'
 import {roster} from './roster'
 import TeamEvents from '../TeamEvents/TeamEvents';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
+import W12UImage from '../images/Warren12U.jpg';
+import W12UUrls from '../Warren12U/events';
 
-
-// import './Cholley16U.css';
+// import './TeamPage.css';
 
 import Banner from '../Banner/Banner';
 
-const Cholley16U = ({ backgroundImage, teamName, statement, eventUrls }) => {
-    const contact1="Head Coach: Mark Cholley (buckeyechargefastpitch@gmail.com)"
-    const contact2="Phone: 740-319-1727"
-    const fieldName="Jedd Park"
-    const fieldAddress1="2275 Pickle Rd"
-    const fieldAddress2="Akron, Ohio 44312"
-    const googleMapLink="https://goo.gl/maps/a9NZ6ZDooJm"
+const TeamPage = ({ route, teamName}) => {
+    const index = teamData.findIndex(teamData => teamData.teamName === teamName)
+    const contact1=`${teamData[index].headCoach}(${teamData[index].teamEmail})`
+    const contact2=`Assistant Coaches: ${teamData[index].assistantCoach1}, ${teamData[index].assistantCoach2}`
+    const fieldName="Johnson Community Center"
+    const fieldAddress1="800 Gillmer Rd"
+    const fieldAddress2="Leavittsburg, Ohio 44430"
+    const googleMapLink="https://goo.gl/maps/TSZ2T6Ti4oo"
     
   return (
     <div className="App">
       <Banner
-          backgroundImage={backgroundImage}
+          backgroundImage={W12UImage}
           teamName={teamName}
-          statement={statement}
         />
       <div  >
         <Contact contact1={contact1} contact2={contact2} />
@@ -44,10 +46,10 @@ const Cholley16U = ({ backgroundImage, teamName, statement, eventUrls }) => {
       </div>
       <div >
           <ScoreBoard />
-          <TeamEvents eventUrls={eventUrls} />
+          <TeamEvents eventUrls={W12UUrls} />
       </div>
     </div>
   );
 }
 
-export default Cholley16U;
+export default TeamPage;

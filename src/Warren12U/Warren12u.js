@@ -7,13 +7,14 @@ import TeamPhotos from '../TeamPhotos/TeamPhotos';
 import {roster} from './roster'
 import TeamEvents from '../TeamEvents/TeamEvents';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
-
+import W12UImage from '../images/Warren12U.jpg';
+import W12UUrls from '../Warren12U/events';
 
 // import './Warren12u.css';
 
 import Banner from '../Banner/Banner';
 
-const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
+const Warren12u = ({ teamName}) => {
     const contact1="Head Coach: Rich Meikle (WarrenBuckeyeCharge@gmail.com)"
     const contact2="Assistant Coach: Denise Brunke-Allen (deebbmt@aol.com)"
     const fieldName="Johnson Community Center"
@@ -24,9 +25,8 @@ const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
   return (
     <div className="App">
       <Banner
-          backgroundImage={backgroundImage}
+          backgroundImage={W12UImage}
           teamName={teamName}
-          statement={statement}
         />
       <div  >
         <Contact contact1={contact1} contact2={contact2} />
@@ -44,7 +44,7 @@ const Warren12u = ({ backgroundImage, teamName, statement, eventUrls }) => {
       </div>
       <div >
           <ScoreBoard />
-          <TeamEvents eventUrls={eventUrls} />
+          <TeamEvents eventUrls={W12UUrls} />
       </div>
     </div>
   );
