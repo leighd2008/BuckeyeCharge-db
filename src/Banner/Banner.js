@@ -6,7 +6,7 @@ const Banner = ({ teamName, backgroundImage }) => {
   return (
     <div >
       {console.log('background', backgroundImage)}
-      <Jumbotron style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <Jumbotron style={{ backgroundImage: `url(${backgroundImage })` }}>
         <h1 className="ma0 pa0">{teamName}</h1>
       </Jumbotron>
     </div>

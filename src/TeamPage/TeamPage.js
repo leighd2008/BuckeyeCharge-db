@@ -24,8 +24,6 @@ const TeamPage = ({ route, teamName, eventUrls}) => {
     const googleMapLink="https://goo.gl/maps/TSZ2T6Ti4oo"
     const images = require.context('../../public/images', true);
     let imgsrc = images(`./${teamData[index].teamPic}`)
-    // const eventUrls = {};
-      
     
   return (
     <div className="App">
