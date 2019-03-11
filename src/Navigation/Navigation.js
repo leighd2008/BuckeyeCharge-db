@@ -2,6 +2,7 @@ import React from 'react';
 import BCLogo from '../images/BCLogo-blk-sml.png';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './Navigation.css';
+import { Ch16UURLS, C16UURLS, G14UURLS, Y14UURLS, N12UURLS, W12UURLS, G11UURLS, A10UURLS } from '../Warren12U/events';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -47,35 +48,35 @@ render() {
                 <DropdownMenu >
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Cholley16U', 'Cholley 16U')} >Cholley 16U</p>
+                      onRouteChange('Cholley16U', 'Cholley 16U', Ch16UURLS)} >Cholley 16U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Cavanagh16U', 'Cavanagh 16U')} >Cavanagh 16U</p>
+                      onRouteChange('Cavanagh16U', 'Cavanagh 16U', C16UURLS)} >Cavanagh 16U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Gardner14U', 'Gardner 14U')} >Gardner 14U</p>
+                      onRouteChange('Gardner14U', 'Gardner 14U', G14UURLS)} >Gardner 14U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Yoder14U', 'Yoder 14U')} >Yoder 14U</p>
+                      onRouteChange('Yoder14U', 'Yoder 14U', Y14UURLS)} >Yoder 14U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Norman12U', 'Norman 12U',)} >Norman 12U</p>
+                      onRouteChange('Norman12U', 'Norman 12U', W12UURLS)} >Norman 12U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                    onRouteChange('Warren12U', 'Warren 12U')} >Warren 12U</p>
+                    onRouteChange('Warren12U', 'Warren 12U', N12UURLS)} >Warren 12U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                    onRouteChange('Gressman11U', 'Gressman 11U')} >Gressamn 11U</p>
+                    onRouteChange('Gressman11U', 'Gressman 11U', G11UURLS)} >Gressamn 11U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Albertson10U', 'Albertson 10U')} >Albertson10U</p>
+                      onRouteChange('Albertson10U', 'Albertson 10U', A10UURLS)} >Albertson10U</p>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

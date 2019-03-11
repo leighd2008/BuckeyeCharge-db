@@ -23,7 +23,7 @@ class App extends Component {
       this.state = initialState
     }
 
-    onRouteChange = (route, team) => {
+    onRouteChange = (route, team, eventUrls) => {
       if (route === 'home') {
         this.setState(initialState)
       }
@@ -31,6 +31,7 @@ class App extends Component {
         route: route,
         homeImage: homeImage,
         teamName: team,
+        eventUrls: eventUrls,
       });
     }
 
@@ -55,17 +56,6 @@ class App extends Component {
         <Navigation
           onRouteChange={this.onRouteChange}
         />
-        {/* { this.state.route === 'home'
-          ?<div>
-            <Home homeImage={this.state.homeImage}/>
-          </div>
-          : <Warren12U
-            backgroundImage={this.state.backgroundImage}
-            teamName={this.state.teamName}
-            statement={this.state.statement}
-            eventUrls={this.state.eventUrls}
-          />
-        } */}
         <div>{ project() }</div>
 
       </div>

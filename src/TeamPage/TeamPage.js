@@ -5,17 +5,16 @@ import HomeField from '../HomeField/HomeField';
 import TeamRoster from '../TeamRoster/TeamRoster';
 import TeamPhotos from '../TeamPhotos/TeamPhotos';
 import {teamData} from './teamData'
-import {roster} from './roster'
 import TeamEvents from '../TeamEvents/TeamEvents';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
-import W12UImage from '../images/Warren12U.jpg';
-import W12UUrls from '../Warren12U/events';
+
 
 // import './TeamPage.css';
 
 import Banner from '../Banner/Banner';
+// import { faImages } from '@fortawesome/free-solid-svg-icons';
 
-const TeamPage = ({ route, teamName}) => {
+const TeamPage = ({ route, teamName, eventUrls}) => {
     const index = teamData.findIndex(teamData => teamData.teamName === teamName)
     const contact1=`${teamData[index].headCoach}(${teamData[index].teamEmail})`
     const contact2=`Assistant Coaches: ${teamData[index].assistantCoach1}, ${teamData[index].assistantCoach2}`
@@ -23,11 +22,15 @@ const TeamPage = ({ route, teamName}) => {
     const fieldAddress1="800 Gillmer Rd"
     const fieldAddress2="Leavittsburg, Ohio 44430"
     const googleMapLink="https://goo.gl/maps/TSZ2T6Ti4oo"
+    const images = require.context('../../public/images', true);
+    let imgsrc = images(`./${teamData[index].teamPic}`)
+    // const eventUrls = {};
+      
     
   return (
     <div className="App">
       <Banner
-          backgroundImage={W12UImage}
+          backgroundImage={imgsrc}
           teamName={teamName}
         />
       <div  >
@@ -41,12 +44,12 @@ const TeamPage = ({ route, teamName}) => {
         />
       </div>
       <div>
-          <TeamRoster roster={roster} />
+          <TeamRoster roster={teamData[index].roster} />
           <TeamPhotos  />
       </div>
       <div >
           <ScoreBoard />
-          <TeamEvents eventUrls={W12UUrls} />
+          <TeamEvents eventUrls={eventUrls} />
       </div>
     </div>
   );
