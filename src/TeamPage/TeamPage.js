@@ -1,5 +1,4 @@
 import React from 'react';
-import fieldImage from '../images/mark-duffel-352915-unsplash2.jpg';
 import Contact from '../Contact/Contact';
 import HomeField from '../HomeField/HomeField';
 import TeamRoster from '../TeamRoster/TeamRoster';

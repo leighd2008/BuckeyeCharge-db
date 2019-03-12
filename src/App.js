@@ -6,6 +6,7 @@ import Home from './Home/Home'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import TeamPage from './TeamPage/TeamPage';
+import TournamentPage from './TournamentPage/TournamentPage';
 
 library.add(faArrowRight, faArrowLeft);
 
@@ -39,6 +40,7 @@ class App extends Component {
     const project = () => {
       switch(this.state.route) {
         case "home": return <Home homeImage={this.state.homeImage}/>;
+        case "tournaments": return <TournamentPage />;
         case "Warren12U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />;
         case "Cholley16U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />;
         case "Cavanagh16U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;

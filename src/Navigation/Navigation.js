@@ -72,7 +72,7 @@ render() {
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                    onRouteChange('Gressman11U', 'Gressman 11U', G11UURLS)} >Gressamn 11U</p>
+                    onRouteChange('Gressman11U', 'Gressman 11U', G11UURLS)} >Gressman 11U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
@@ -81,7 +81,7 @@ render() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavLink tag="h6" href="/" onClick={this.toggle}>
-                <p onClick={() => onRouteChange('home')} >
+                <p onClick={() => onRouteChange('tournaments')} >
                   <br/> TOURNAMENTS 
                 </p> 
               </NavLink>
