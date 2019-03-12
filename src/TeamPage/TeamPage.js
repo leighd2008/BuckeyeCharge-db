@@ -17,16 +17,22 @@ import Banner from '../Banner/Banner';
 const TeamPage = ({ route, teamName, eventUrls}) => {
     const index = teamData.findIndex(teamData => teamData.teamName === teamName)
     const contact1=`${teamData[index].headCoach}(${teamData[index].teamEmail})`
-    const contact2=`Assistant Coaches: ${teamData[index].assistantCoach1}, ${teamData[index].assistantCoach2}`
-    const fieldName="Johnson Community Center"
-    const fieldAddress1="800 Gillmer Rd"
-    const fieldAddress2="Leavittsburg, Ohio 44430"
+    const contact2=`Assistant Coaches: ${teamData[index].assistantCoaches}`
+    const fieldName=`${teamData[index].fieldName}`
+    const fieldAddress1=`${teamData[index].fieldAddress1}`
+    const fieldAddress2=`${teamData[index].fieldAddress2}`
+    const fieldImage=`${teamData[index].fieldImage}`
+    const roster=teamData[index].roster
+    const eventboard=teamData[index].eventUrls
+    const photoGallery=teamData[index].photoGallery
+    const scoreboard=teamData[index].scoreboard
     const googleMapLink="https://goo.gl/maps/TSZ2T6Ti4oo"
     const images = require.context('../../public/images', true);
     let imgsrc = images(`./${teamData[index].teamPic}`)
     
   return (
     <div className="App">
+      {console.log(roster)}
       <Banner
           backgroundImage={imgsrc}
           teamName={teamName}
@@ -42,13 +48,26 @@ const TeamPage = ({ route, teamName, eventUrls}) => {
         />
       </div>
       <div>
-          <TeamRoster roster={teamData[index].roster} />
-          <TeamPhotos  />
+        <TeamRoster roster={roster} />
       </div>
-      <div >
-          <ScoreBoard />
-          <TeamEvents eventUrls={eventUrls} />
-      </div>
+      {photoGallery === true
+        ? <div>
+            <TeamPhotos  />
+          </div>
+        : null
+      }
+      {scoreboard === true
+        ? <div>
+            <ScoreBoard />
+          </div>
+        : null
+      }
+      {eventboard === true
+        ? <div>
+            <TeamEvents eventUrls={eventUrls} />
+          </div>
+        : null
+      }
     </div>
   );
 }
