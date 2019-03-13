@@ -23,7 +23,6 @@ toggle() {
 render() {
     const { onRouteChange } = this.props;
     return (
-      <div >
         <Navbar sticky={'top'} className="navbar navbar-expand-lg navbar-light bg-secondary">
           <NavbarBrand href = "/" >
             <img src={BCLogo}
@@ -108,7 +107,6 @@ render() {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
     )
   }
 }
