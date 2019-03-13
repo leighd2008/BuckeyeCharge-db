@@ -91,12 +91,12 @@ render() {
                 </p> 
               </NavLink>
               <NavLink tag="h6" href="/" onClick={this.toggle}>
-                <p onClick={() => onRouteChange('home')} >
+                <p onClick={() => onRouteChange('training')} >
                   <br/> TRAINING 
                 </p> 
               </NavLink>
               <NavLink tag="h6" href="/" onClick={this.toggle}>
-                <p onClick={() => onRouteChange('home')} >
+                <p onClick={() => onRouteChange('tryouts')} >
                   <br/> TRY-OUTS 
                 </p> 
               </NavLink>

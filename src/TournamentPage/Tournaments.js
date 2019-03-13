@@ -18,6 +18,7 @@ const Tournaments = ({ indexStart, indexEnd }) => {
                       <th >{team.teamName}</th>
                   )
                 }
+                return null;
               })
             }
             </tr>
@@ -35,6 +36,7 @@ const Tournaments = ({ indexStart, indexEnd }) => {
                             <td >{team.tournaments[i].name}</td>
                         )
                       }
+                      return null;
                     })
                   }
                 </tr>
