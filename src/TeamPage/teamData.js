@@ -770,18 +770,78 @@ export const teamData = [
   {
     id: 7,
     teamName: 'Gressman 11U',
-    headCoach: 'Mark Cholley',
-    assistantCoaches: '',
-    teamEmail: 'buckeyechargefastpitch@gmail.com',
+    headCoach: 'Nick Gressman',
+    assistantCoaches: 'Gary Cress, Justin Spear, Dave Contini, Marie Contini',
+    teamEmail: 'Buckeyecharge07@gmail.com',
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'dugout.JPG',
     roster: [{
-        jersey_num: 1,
-        firstName: "",
-        lastName: "",
+        jersey_num: 77,
+        firstName: "Kailyn",
+        lastName: "Gressman",
+        positions: ""
+      },
+      {
+        jersey_num: "00",
+        firstName: "Jenna",
+        lastName: "Spear",
+        positions: ""
+      },
+      {
+        jersey_num: 33,
+        firstName: "Julia",
+        lastName: "Gartner",
+        positions: ""
+      },
+      {
+        jersey_num: 22,
+        firstName: "Sierra",
+        lastName: "Cress",
+        positions: ""
+      },
+      {
+        jersey_num: 12,
+        firstName: "Mackenzie",
+        lastName: "Orosz",
+        positions: ""
+      },
+      {
+        jersey_num: 9,
+        firstName: "Bailey",
+        lastName: "Deutsch",
+        positions: ""
+      },
+      {
+        jersey_num: 15,
+        firstName: "Avery",
+        lastName: "Contini",
+        positions: ""
+      },
+      {
+        jersey_num: 3,
+        firstName: "Madison",
+        lastName: "Bure",
+        positions: ""
+      },
+      {
+        jersey_num: 10,
+        firstName: "Brooke",
+        lastName: "Manav",
+        positions: ""
+      },
+      {
+        jersey_num: 30,
+        firstName: "Hannah",
+        lastName: "Goodson",
+        positions: ""
+      },
+      {
+        jersey_num: 18,
+        firstName: "Delaney",
+        lastName: "Nietert",
         positions: ""
       },
     ],
@@ -789,8 +849,8 @@ export const teamData = [
       {
         date: '',
         Weekend: 'April 26-28',
-        name: '----',
-        Location: ''
+        name: 'Jordyn Myers Memorial',
+        Location: 'Warren, Oh'
       },
       {
         date: '',
@@ -801,8 +861,8 @@ export const teamData = [
       {
         date: '',
         Weekend: 'May 10-12',
-        name: '----',
-        Location: ''
+        name: 'Force Frenzy',
+        Location: 'Rootstown, Oh'
       },
       {
         date: '',
@@ -819,8 +879,8 @@ export const teamData = [
       {
         date: '',
         Weekend: 'May 31- June 2',
-        name: '----',
-        Location: ''
+        name: 'T-Town Showdown',
+        Location: 'Tallmadge, Oh'
       },
       {
         date: '',
@@ -831,8 +891,8 @@ export const teamData = [
       {
         date: '',
         Weekend: 'June 14-16',
-        name: '----',
-        Location: ''
+        name: 'Wizards Farley Memorial',
+        Location: 'Maumee, Oh'
       },
       {
         date: '',
@@ -855,8 +915,8 @@ export const teamData = [
       {
         date: '',
         Weekend: 'July 12-14',
-        name: '----',
-        Location: ''
+        name: 'Stadium Series',
+        Location: 'Akron, Oh'
       },
       {
         date: '',
@@ -867,8 +927,8 @@ export const teamData = [
       {
         date: '',
         Weekend: 'July 26-27',
-        name: '----',
-        Location: ''
+        name: 'Christmas in July',
+        Location: 'North Ridgeville, Oh'
       },
     ],
     fieldImage: '../images/mark-duffel-352915-unsplash2.jpg',
