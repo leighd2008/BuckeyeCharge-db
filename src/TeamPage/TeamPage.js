@@ -20,7 +20,7 @@ const TeamPage = ({ route, teamName, eventUrls}) => {
     const fieldName=`${teamData[index].fieldName}`;
     const fieldAddress1=`${teamData[index].fieldAddress1}`;
     const fieldAddress2=`${teamData[index].fieldAddress2}`;
-    const fieldImage=`${fieldImage}`;
+    const fieldImage=fieldImage;
     const roster=teamData[index].roster;
     const eventboard=teamData[index].eventUrls;
     const photoGallery=teamData[index].photoGallery;
