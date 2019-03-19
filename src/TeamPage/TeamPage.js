@@ -6,6 +6,7 @@ import TeamPhotos from '../TeamPhotos/TeamPhotos';
 import {teamData} from './teamData';
 import TeamEvents from '../TeamEvents/TeamEvents';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
+import fieldImage from '../images/mark-duffel-352915-unsplash2.jpg';
 
 
 // import './TeamPage.css';
@@ -19,7 +20,7 @@ const TeamPage = ({ route, teamName, eventUrls}) => {
     const fieldName=`${teamData[index].fieldName}`;
     const fieldAddress1=`${teamData[index].fieldAddress1}`;
     const fieldAddress2=`${teamData[index].fieldAddress2}`;
-    import fieldImage from '../images/mark-duffel-352915-unsplash2.jpg';
+    const fieldImage=`${fieldImage}`;
     const roster=teamData[index].roster;
     const eventboard=teamData[index].eventUrls;
     const photoGallery=teamData[index].photoGallery;
