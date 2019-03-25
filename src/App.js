@@ -10,8 +10,6 @@ import TournamentPage from './TournamentPage/TournamentPage';
 import Training from './Training/Training';
 import TryOuts from './Try-Outs/Try-Outs';
 
-// const API_KEY = `${process.env.REACT_APP_API_KEY}`
-
 library.add(faArrowRight, faArrowLeft);
 
 const initialState = {
