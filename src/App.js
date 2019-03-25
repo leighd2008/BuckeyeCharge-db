@@ -10,6 +10,8 @@ import TournamentPage from './TournamentPage/TournamentPage';
 import Training from './Training/Training';
 import TryOuts from './Try-Outs/Try-Outs';
 
+// const API_KEY = `${process.env.REACT_APP_API_KEY}`
+
 library.add(faArrowRight, faArrowLeft);
 
 const initialState = {
@@ -35,6 +37,7 @@ class App extends Component {
         homeImage: homeImage,
         teamName: team,
         eventUrls: eventUrls,
+        // API_KEY: API_KEY,
       });
     }
 

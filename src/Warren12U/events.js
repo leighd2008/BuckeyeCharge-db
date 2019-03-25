@@ -1,10 +1,8 @@
-import GOOGLE_API_KEY from '../config'
-// import { config } from "@fortawesome/fontawesome-svg-core";
+const API_KEY = `${process.env.REACT_APP_API_KEY}`
+
 let makeGoogleCalendarURL = calID =>
   `https://www.googleapis.com/calendar/v3/calendars/${calID}/events`
-+ `?singleEvents=true&key=${GOOGLE_API_KEY}`
-
-
++ `?singleEvents=true&key=${API_KEY}`
 
 const Ch16UURLS = {
   Instateam: makeGoogleCalendarURL(`vcs6e7pceduilagmr52c0h8ev4@group.calendar.google.com`)
