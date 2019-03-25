@@ -1,6 +1,8 @@
+import GOOGLE_API_KEY from '../config'
+// import { config } from "@fortawesome/fontawesome-svg-core";
 let makeGoogleCalendarURL = calID =>
   `https://www.googleapis.com/calendar/v3/calendars/${calID}/events`
-+ `?singleEvents=true&key=AIzaSyDIKhZBFveZRNmVPPJ9NeZhXnYm8MMGfUE`
++ `?singleEvents=true&key=${GOOGLE_API_KEY}`
 
 
 
