@@ -219,6 +219,115 @@ export const teamData = [
     scoreboard: false,
   },
   {
+    id: 1,
+    teamName: 'Kaisk 16U',
+    headCoach: 'Steve Kaisk',
+    assistantCoaches: '',
+    teamEmail: 'buckeyechargefastpitch@gmail.com',
+    fieldName: "Jedd Park",
+    fieldAddress1: "2275 Pickle Rd",
+    fieldAddress2: "Akron, Ohio 44312",
+    googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
+    teamPic: 'dugout.JPG',
+    roster: [{
+        jersey_num: 1,
+        firstName: "",
+        lastName: "",
+        positions: ""
+      },
+    ],
+    tournaments: [
+      {
+        date: '',
+        Weekend: 'April 26-28',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'May 3-5',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'May 10-12',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'May 17-19',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'May 24-26',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'May 31- June 2',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'June 7-9',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'June 14-16',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'June 21-23',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'June 28-30',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'July 5-7',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'July 12-14',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'July 19-20',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'July 26-27',
+        name: '----',
+        Location: ''
+      },
+    ],
+    fieldImage: '../images/mark-duffel-352915-unsplash2.jpg',
+    eventUrls: false,
+    photoGallery: false,
+    scoreboard: false,
+  },
+  {
     id: 3,
     teamName: 'Gardner 14U',
     headCoach: 'Pete Gardner',
@@ -723,13 +832,13 @@ export const teamData = [
         date: '6/14 - 6/16',
         Weekend: 'June 14-16',
         name: 'Ohio Magic',
-        Location: 'Boardman, OH'
+        Location: 'Field of Dreams Boardman, OH'
       },
       {
         date: '6/22 - 6/23',
         Weekend: 'June 21-23',
-        name: '',
-        Location: ''
+        name: 'Pinata Smash',
+        Location: 'Riverside Park Beaver Falls, PA'
       },
       {
         date: '6/28 - 6/30',
@@ -747,7 +856,7 @@ export const teamData = [
         date: '7/12 - 7/14',
         Weekend: 'July 12-14',
         name: 'Mentor Big Red',
-        Location: 'Mentor, Oh'
+        Location: 'Eleanor B. Garfield Park Mentor, Oh'
       },
       {
         date: '',
@@ -940,18 +1049,71 @@ export const teamData = [
     id: 8,
     teamName: 'Albertson 10U',
     headCoach: 'Jodi Albertson',
-    assistantCoaches: '',
-    teamEmail: 'buckeyechargefastpitch@gmail.com',
+    assistantCoaches: 'Tony Paonessa, Ryan Miller',
+    teamEmail: 'tyjonna1230@yahoo.com',
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
-    teamPic: 'dugout.JPG',
+    teamPic: 'Albertson10U-1.JPG',
     roster: [{
+        jersey_num: "00",
+        firstName: "Chelsea",
+        lastName: "Miller",
+        positions: "CF, 1B"
+      },
+      {
         jersey_num: 1,
-        firstName: "",
-        lastName: "",
-        positions: ""
+        firstName: "Sophia",
+        lastName: "Paonessa",
+        positions: "P, 3B"
+      },{
+        jersey_num: 2,
+        firstName: "Taryn",
+        lastName: "Roberts",
+        positions: "P, OF"
+      },
+      {
+        jersey_num: 4,
+        firstName: "Reese",
+        lastName: "Genet",
+        positions: "P, OF"
+      },
+      {
+        jersey_num: 8,
+        firstName: "Renee",
+        lastName: "Brown",
+        positions: "OF, P"
+      },
+      {
+        jersey_num: 10,
+        firstName: "Joanna",
+        lastName: "Albertson",
+        positions: "OF, 3B, 2B"
+      },
+      {
+        jersey_num: 11,
+        firstName: "Zoey",
+        lastName: "Mcullough",
+        positions: "1B"
+      },
+      {
+        jersey_num: 16,
+        firstName: "Shawna",
+        lastName: "Baylor",
+        positions: "2B, C"
+      },
+      {
+        jersey_num: 20,
+        firstName: "Sophia",
+        lastName: "Worthington",
+        positions: "SS"
+      },
+      {
+        jersey_num: 41,
+        firstName: "Alonna",
+        lastName: "Monroe",
+        positions: "C"
       },
     ],
     tournaments: [
@@ -982,14 +1144,14 @@ export const teamData = [
       {
         date: '',
         Weekend: 'May 24-26',
-        name: '----',
-        Location: ''
+        name: 'Firefighters Memorial @Berliner',
+        Location: 'Columbus, OH'
       },
       {
         date: '',
         Weekend: 'May 31- June 2',
-        name: '----',
-        Location: ''
+        name: 'T-Town Show Down',
+        Location: 'Tallmadge, OH'
       },
       {
         date: '',
@@ -1000,8 +1162,8 @@ export const teamData = [
       {
         date: '',
         Weekend: 'June 14-16',
-        name: '----',
-        Location: ''
+        name: 'Sheer Madness ASA Qualifier',
+        Location: 'North Ridgeville, OH'
       },
       {
         date: '',
@@ -1010,10 +1172,10 @@ export const teamData = [
         Location: ''
       },
       {
-        date: '',
+        date: 'July 25-28',
         Weekend: 'June 28-30',
-        name: '----',
-        Location: ''
+        name: 'All-Sanctioined World Series @Berliner',
+        Location: 'Columbus, OH'
       },
       {
         date: '',
@@ -1038,6 +1200,174 @@ export const teamData = [
         Weekend: 'July 26-27',
         name: '----',
         Location: ''
+      },
+    ],
+    fieldImage: '../images/mark-duffel-352915-unsplash2.jpg',
+    eventUrls: false,
+    photoGallery: false,
+    scoreboard: false,
+  },
+  {
+    id: 8,
+    teamName: 'Homan 8U',
+    headCoach: 'Mike Homan',
+    assistantCoaches: 'Steve Huddleston, Mike Mesher, Ryan Knapp',
+    teamEmail: 'widersturbo@aol.com',
+    fieldName: "Jedd Park",
+    fieldAddress1: "2275 Pickle Rd",
+    fieldAddress2: "Akron, Ohio 44312",
+    googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
+    teamPic: 'Homan8U.JPG',
+    roster: [{
+        jersey_num: 2,
+        firstName: "Ryann",
+        lastName: "Huddleston",
+        positions: "2B"
+      },
+      {
+        jersey_num: 7,
+        firstName: "Emelia",
+        lastName: "Gates",
+        positions: "C, OF"
+      },{
+        jersey_num: 10,
+        firstName: "Devin",
+        lastName: "Stohovitch",
+        positions: "SS"
+      },
+      {
+        jersey_num: 14,
+        firstName: "Aubrey",
+        lastName: "Homan",
+        positions: "1B"
+      },
+      {
+        jersey_num: 4,
+        firstName: "Autumn",
+        lastName: "Betts",
+        positions: "P"
+      },
+      {
+        jersey_num: 25,
+        firstName: "Juliana",
+        lastName: "Baker",
+        positions: "3B, OF"
+      },
+      {
+        jersey_num: 16,
+        firstName: "Hope",
+        lastName: "Mesher",
+        positions: "OF"
+      },
+      {
+        jersey_num: 3,
+        firstName: "Jocelyn",
+        lastName: "Gordon",
+        positions: "OF"
+      },
+      {
+        jersey_num: 5,
+        firstName: "Haddy",
+        lastName: "Knapp",
+        positions: "3B, OF"
+      },
+      {
+        jersey_num: 27,
+        firstName: "Ashlynn",
+        lastName: "Logsdon",
+        positions: "C, OF"
+      },
+      {
+        jersey_num: 23,
+        firstName: "Ava",
+        lastName: "Conley",
+        positions: "C, OF"
+      },
+    ],
+    tournaments: [
+      {
+        date: '',
+        Weekend: 'April 26-28',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'May 3-5',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'May 10-12',
+        name: 'Early Bird Wake Up Call',
+        Location: 'Mogadore, OH'
+      },
+      {
+        date: '',
+        Weekend: 'May 17-19',
+        name: 'Don Godbey Slugfest',
+        Location: 'WV'
+      },
+      {
+        date: '',
+        Weekend: 'May 24-26',
+        name: 'Black Widows',
+        Location: 'Ashland, OH'
+      },
+      {
+        date: '',
+        Weekend: 'May 31- June 2',
+        name: 'T-Town Show Down',
+        Location: 'Tallmadge, OH'
+      },
+      {
+        date: '',
+        Weekend: 'June 7-9',
+        name: 'Shady Drive Classic',
+        Location: 'North Ridgeville, OH'
+      },
+      {
+        date: '',
+        Weekend: 'June 14-16',
+        name: 'Pride Challenge',
+        Location: 'Frederickstown, OH'
+      },
+      {
+        date: '',
+        Weekend: 'June 21-23',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: 'June 25-28',
+        Weekend: 'June 28-30',
+        name: 'Ashland Summer Classic',
+        Location: 'Ashland, OH'
+      },
+      {
+        date: '',
+        Weekend: 'July 5-7',
+        name: '8U State Tournament',
+        Location: 'Frederickstown, OH'
+      },
+      {
+        date: '',
+        Weekend: 'July 12-14',
+        name: '----',
+        Location: ''
+      },
+      {
+        date: '',
+        Weekend: 'July 19-20',
+        name: 'JB Chambers All American',
+        Location: 'WV'
+      },
+      {
+        date: '',
+        Weekend: 'July 26-27',
+        name: 'Columbus World Series',
+        Location: 'Columbus, OH'
       },
     ],
     fieldImage: '../images/mark-duffel-352915-unsplash2.jpg',
