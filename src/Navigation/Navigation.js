@@ -93,6 +93,11 @@ render() {
                 </p> 
               </NavLink>
               <NavLink tag="h6" href="/" onClick={this.toggle}>
+                <a href="https://2019buckeyecharge.itemorder.com/sale" >
+                  <br/> FAN GEAR 
+                </a> 
+              </NavLink>
+              <NavLink tag="h6" href="/" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('home')} >
                   <br/> SPONSORS 
                 </p> 
