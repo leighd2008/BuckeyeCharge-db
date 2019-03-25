@@ -9,6 +9,7 @@ import TeamPage from './TeamPage/TeamPage';
 import TournamentPage from './TournamentPage/TournamentPage';
 import Training from './Training/Training';
 import TryOuts from './Try-Outs/Try-Outs';
+import ABPitching from './ABPitching/ABPitching';
 
 library.add(faArrowRight, faArrowLeft);
 
@@ -56,6 +57,7 @@ class App extends Component {
         case "Albertson10U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
         case "Homan8U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
         case "Kaisk16U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+        case "abpitching": return <ABPitching />
         default: return <h1>No team match</h1>
       }
     }

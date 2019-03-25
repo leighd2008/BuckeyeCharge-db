@@ -113,7 +113,7 @@ render() {
                 </p> 
               </NavLink>
               <NavLink tag="h6" href="/" onClick={this.toggle}>
-                <p onClick={() => onRouteChange('home')} >
+                <p onClick={() => onRouteChange('abpitching')} >
                   AB Pitching,<br/> Hitting <br/>and Fitness 
                 </p> 
               </NavLink>
