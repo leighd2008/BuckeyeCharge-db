@@ -36,4 +36,12 @@ const A10UURLS = {
   Instateam: makeGoogleCalendarURL(`vcs6e7pceduilagmr52c0h8ev4@group.calendar.google.com`)
 };
 
-export { Ch16UURLS, C16UURLS, G14UURLS, Y14UURLS, N12UURLS, W12UURLS, G11UURLS, A10UURLS }
+const K16UURLS = {
+  Instateam: makeGoogleCalendarURL(`vcs6e7pceduilagmr52c0h8ev4@group.calendar.google.com`)
+};
+
+const H8UURLS = {
+  Instateam: makeGoogleCalendarURL(`vcs6e7pceduilagmr52c0h8ev4@group.calendar.google.com`)
+};
+
+export { Ch16UURLS, C16UURLS, G14UURLS, Y14UURLS, N12UURLS, W12UURLS, G11UURLS, A10UURLS, K16UURLS,  H8UURLS}

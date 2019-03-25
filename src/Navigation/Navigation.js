@@ -2,7 +2,7 @@ import React from 'react';
 import BCLogo from '../images/BCLogo-blk-sml.png';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './Navigation.css';
-import { Ch16UURLS, C16UURLS, G14UURLS, Y14UURLS, N12UURLS, W12UURLS, G11UURLS, A10UURLS } from '../Warren12U/events';
+import { Ch16UURLS, C16UURLS, G14UURLS, Y14UURLS, N12UURLS, W12UURLS, G11UURLS, A10UURLS, K16UURLS, H8UURLS } from '../Warren12U/events';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -55,6 +55,10 @@ render() {
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
+                      onRouteChange('Kaisk16U', 'Kaisk 16U', K16UURLS)} >Kaisk 16U</p>
+                  </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => 
                       onRouteChange('Gardner14U', 'Gardner 14U', G14UURLS)} >Gardner 14U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
@@ -76,6 +80,10 @@ render() {
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
                       onRouteChange('Albertson10U', 'Albertson 10U', A10UURLS)} >Albertson10U</p>
+                  </DropdownItem>
+                  <DropdownItem onClick={this.toggle} >
+                    <p onClick={() => 
+                      onRouteChange('Homan8U', 'Homan 8U', H8UURLS)} >Homan8U</p>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
