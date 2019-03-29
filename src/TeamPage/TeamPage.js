@@ -7,20 +7,15 @@ import {teamData} from './teamData';
 import TeamEvents from '../TeamEvents/TeamEvents';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
 import fieldImage from '../images/mark-duffel-352915-unsplash2.jpg';
-
-
-// import './TeamPage.css';
-
 import Banner from '../Banner/Banner';
 
-const TeamPage = ({ route, teamName, eventUrls}) => {
+const TeamPage = ({teamName, eventUrls}) => {
     const index = teamData.findIndex(teamData => teamData.teamName === teamName);
     const contact1=`${teamData[index].headCoach}(${teamData[index].teamEmail})`;
     const contact2=`Assistant Coaches: ${teamData[index].assistantCoaches}`;
     const fieldName=`${teamData[index].fieldName}`;
     const fieldAddress1=`${teamData[index].fieldAddress1}`;
     const fieldAddress2=`${teamData[index].fieldAddress2}`;
-    // const fieldImage={fieldImage};
     const roster=teamData[index].roster;
     const eventboard=teamData[index].eventUrls;
     const photoGallery=teamData[index].photoGallery;
@@ -31,7 +26,6 @@ const TeamPage = ({ route, teamName, eventUrls}) => {
     
   return (
     <div className="App">
-      {console.log(roster)}
       <Banner
           backgroundImage={imgsrc}
           teamName={teamName}
