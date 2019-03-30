@@ -3,13 +3,13 @@ import React from 'react';
 import './ScoreBoard.css';
 import { Card, CardTitle } from 'reactstrap';
 
-const ScoreBoard = (props) => {
+const ScoreBoard = ({scoreboard}) => {
   return (
     <div>
       <div className='lgscreen'>
         <Card className="scoreboard" >
           <CardTitle tag="h1">Scoreboard</CardTitle>
-          <iframe src="//gc.com/team-5c85359b955e067a733c24e7/scoreboard?g=5&p=5bafd0a9b7ce48001b2f2705" width="728" height="90" scrolling="no" 
+          <iframe src={scoreboard} width="728" height="90" scrolling="no" 
               frameBorder="0" title='scoreboard'></iframe>
         </Card>
       </div>

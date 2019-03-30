@@ -49,11 +49,11 @@ const TeamPage = ({teamName, eventUrls}) => {
           </div>
         : null
       }
-      {scoreboard === true
-        ? <div>
-            <ScoreBoard />
+      {scoreboard === false
+        ? null
+        : <div>
+            <ScoreBoard scoreboard={scoreboard}/>
           </div>
-        : null
       }
       {eventboard === true
         ? <div>
