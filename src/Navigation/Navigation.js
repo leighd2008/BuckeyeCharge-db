@@ -25,7 +25,7 @@ render() {
     const { onRouteChange } = this.props;
     return (
         <Navbar sticky={'top'} className="navbar navbar-expand-lg navbar-light bg-secondary">
-          <NavbarBrand href = "/" >
+          <NavbarBrand href = "/BuckeyeCharge" >
             <img src={BCLogo}
                 width="60"
                 height="60"
