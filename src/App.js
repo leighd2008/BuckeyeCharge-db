@@ -68,21 +68,21 @@ class App extends Component {
         <BrowserRouter>
           <Navigation onRouteChange={this.onRouteChange} />
           <Switch>
-            <Route exact path="/" component={() => <Home homeImage={this.state.homeImage} />} />
-            <Route exact path="/tournaments" component={() => <TournamentPage />} />
-            <Route exact path="/training" component={() => <Training />} />
-            <Route exact path="/tryouts" component={() => <TryOuts homeImage={this.state.homeImage}/>} />
-            <Route exact path="/Warren12U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/Cholley16U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/Cavanagh15U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/Gardner13U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/Yoder14U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/Norman12U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/Gressman11U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/Albertson10U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge" component={() => <Home homeImage={this.state.homeImage} />} />
+            <Route exact path="/BuckeyeCharge/tournaments" component={() => <TournamentPage />} />
+            <Route exact path="/BuckeyeCharge/training" component={() => <Training />} />
+            <Route exact path="/BuckeyeCharge/tryouts" component={() => <TryOuts homeImage={this.state.homeImage}/>} />
+            <Route exact path="/BuckeyeCharge/Warren12U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Cholley16U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Cavanagh15U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Gardner13U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Yoder14U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Norman12U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Gressman11U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Albertson10U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
             <Route exact path="/Homan8U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/Kaisk16U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
-            <Route exact path="/abpitching" component={() => <ABPitching />} />
+            <Route exact path="/BuckeyeCharge/Kaisk16U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/abpitching" component={() => <ABPitching />} />
           </Switch>
         </BrowserRouter>
           
