@@ -29,8 +29,8 @@ render() {
                 width="60"
                 height="60"
                 className="d-inline-block align-top"
-                alt="BC logo" /> <h4 className="d-inline-block align-bottom 5ma"> 
-                   Buckeye Charge Fastpitch Softball </h4>
+                alt="BC logo" /> <h4 className="d-inline-block align-bottom"> 
+                   Buckeye Charge <br/>Fastpitch Softball </h4>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar >

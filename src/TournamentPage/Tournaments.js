@@ -7,7 +7,7 @@ const Tournaments = ({ indexStart, indexEnd }) => {
   
   return (
     <Card className="ma3 roster" style={{ backgroundColor: '#6c757d', borderColor: 'red', borderWidth: '4px', minWidth:'60vw' }}>
-        <table className="f4 w-100 mw8 center pa4 ma2" >
+        <table className="f6 w-100 mw8 center pa4 ma2" >
           <thead>
             <tr >
               <th>Weekend</th>

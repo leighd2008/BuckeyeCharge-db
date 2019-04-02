@@ -11,7 +11,7 @@ import Banner from '../Banner/Banner';
 
 const TeamPage = ({teamName, eventUrls}) => {
     const index = teamData.findIndex(teamData => teamData.teamName === teamName);
-    const contact1=`${teamData[index].headCoach}(${teamData[index].teamEmail})`;
+    const contact1=`${teamData[index].headCoach} (${teamData[index].teamEmail})`;
     const contact2=`Assistant Coaches: ${teamData[index].assistantCoaches}`;
     const fieldName=`${teamData[index].fieldName}`;
     const fieldAddress1=`${teamData[index].fieldAddress1}`;
