@@ -2,7 +2,7 @@ import React from 'react';
 import BCLogo from '../images/BCLogo-blk-sml.png';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './Navigation.css';
-import { Ch16UURLS, C15UURLS, G13UURLS, Y14UURLS, N12UURLS, W12UURLS, G11UURLS, A10UURLS, K16UURLS, H8UURLS } from '../Warren12U/events';
+import { Ch16UURLS, C15UURLS, G13UURLS, Y14UURLS, N12UURLS, W12UURLS, G11UURLS, A10UURLS, K16UURLS, H8UURLS } from '../TeamPage/events';
 
 class Navigation extends React.Component {
   constructor(props) {
