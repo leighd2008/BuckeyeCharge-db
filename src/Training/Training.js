@@ -119,10 +119,18 @@ class Training extends Component {
                 allowFullScreen
                 title='video'
             />
-            <button onClick={this.goToVideo.bind(this, this.state.videoIndex -1)}>
+            <button
+              aria-label='previous video'
+              onClick=
+                {this.goToVideo.bind(this, this.state.videoIndex -1)}
+            >
               Previous
             </button>
-            <button onClick={this.goToVideo.bind(this, this.state.videoIndex +1)}>
+            <button
+              aria-label='next video'
+              onClick=
+                {this.goToVideo.bind(this, this.state.videoIndex +1)}
+            >
               Next
             </button>
           </div>
