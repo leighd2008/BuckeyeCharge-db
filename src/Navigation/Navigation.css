@@ -6,6 +6,10 @@ h4, h1 {
  color: red !important;
  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
+a.dropdown-item, a.nav-link {
+  color: black !important;
+  text-shadow: none;
+}
 
 .navbar {
   border: 5px solid red;
@@ -15,6 +19,7 @@ h4, h1 {
   padding: 0 !important;
   z-index: 199;
 }
+
 
 /* @media screen and (min-width: 850px) {
   h4 {
