@@ -66,6 +66,7 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
           <Navigation onRouteChange={this.onRouteChange} />
+          <Route exact path="/" component={() => <Home homeImage={this.state.homeImage} />} />
           <Switch>
             <Route exact path="/" component={() => <Home homeImage={this.state.homeImage} />} />
             <Route exact path="/tournaments" component={() => <TournamentPage />} />
