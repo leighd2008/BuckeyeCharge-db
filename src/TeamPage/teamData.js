@@ -4,18 +4,91 @@ export const teamData = [
     id: 1,
     teamName: 'Cholley 16U',
     headCoach: 'Mark Cholley',
-    assistantCoaches: '',
-    teamEmail: 'buckeyechargefastpitch @gmail.com',
+    assistantCoaches: 'Paul Mason, Angie Cress, Kelli Martin',
+    teamEmail: 'Neiman41@msn.com',
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'dugout.JPG',
-    roster: [{
-        jersey_num: 1,
-        firstName: "",
-        lastName: "",
-        positions: ""
+    roster: [
+      {
+        jersey_num: 22,
+        firstName: "Jordan",
+        lastName: "Cholley",
+        positions: "P, SS, 2B, OF"
+      },
+      {
+        jersey_num: '01',
+        firstName: "Olivia",
+        lastName: "Mason",
+        positions: "2B, OF"
+      },
+      {
+        jersey_num: 42,
+        firstName: "Mikayla",
+        lastName: "Haydu",
+        positions: "SS, 2B, OF"
+      },
+      {
+        jersey_num: 19,
+        firstName: "Kayedon",
+        lastName: "Martin",
+        positions: "C, 3B"
+      },
+      {
+        jersey_num: 10,
+        firstName: "Shea",
+        lastName: "Cress",
+        positions: "1B, OF"
+      },
+      {
+        jersey_num: 12,
+        firstName: "Haley",
+        lastName: "Leininger",
+        positions: "OF"
+      },
+      {
+        jersey_num: 8,
+        firstName: "Amber",
+        lastName: "Burick",
+        positions: "P, 2B, OF"
+      },
+      {
+        jersey_num: 20,
+        firstName: "Emma",
+        lastName: "Rose",
+        positions: "3B, 1B"
+      },
+      {
+        jersey_num: 6,
+        firstName: "Sydney",
+        lastName: "Mantell",
+        positions: "C"
+      },
+      {
+        jersey_num: 24,
+        firstName: "McKenzi",
+        lastName: "Corpie",
+        positions: "P, OF, 1B"
+      },
+      {
+        jersey_num: 2,
+        firstName: "Amanda",
+        lastName: "Morten",
+        positions: "P, OF, IF"
+      },
+      {
+        jersey_num: 44,
+        firstName: "Kylie",
+        lastName: "Kratz",
+        positions: "C, IF, OF"
+      },
+      {
+        jersey_num: 15,
+        firstName: "Samantha",
+        lastName: "Secrest",
+        positions: "P, IF, OF"
       },
     ],
     tournaments: [
@@ -52,55 +125,55 @@ export const teamData = [
       {
         date: '',
         Weekend: 'May 31- June 2',
-        name: '----',
+        name: 'Perfect Storm',
         Location: ''
       },
       {
         date: '',
         Weekend: 'June 7-9',
-        name: '----',
+        name: 'Toledo Tune-Up',
         Location: ''
       },
       {
         date: '',
         Weekend: 'June 14-16',
-        name: '----',
+        name: 'Sheer Madness',
         Location: ''
       },
       {
         date: '',
         Weekend: 'June 21-23',
-        name: '----',
+        name: 'Hall of Fame Classic (Eastern National Qualifier)',
         Location: ''
       },
       {
         date: '',
         Weekend: 'June 28-30',
-        name: '----',
+        name: 'Fireworks Frenzy',
         Location: ''
       },
       {
         date: '',
         Weekend: 'July 5-7',
-        name: '----',
+        name: 'GAPSS',
         Location: ''
       },
       {
         date: '',
         Weekend: 'July 12-14',
-        name: '----',
+        name: 'Loudonville',
         Location: ''
       },
       {
         date: '',
         Weekend: 'July 19-20',
-        name: '----',
+        name: "Hope's Turn At Bat",
         Location: ''
       },
       {
         date: '',
         Weekend: 'July 26-27',
-        name: '----',
+        name: 'Christmas in July',
         Location: ''
       },
     ],
@@ -110,7 +183,7 @@ export const teamData = [
     scoreboard: false,
   },
   {
-    id: 1,
+    id: 2,
     teamName: 'Kaisk 16U',
     headCoach: 'Steve Kaisk',
     assistantCoaches: '',
@@ -219,7 +292,7 @@ export const teamData = [
     scoreboard: false,
   },
   {
-    id: 2,
+    id: 3,
     teamName: 'Cavanagh 15U',
     headCoach: 'Kevin Cavanagh',
     assistantCoaches: 'Kerry Cavanagh, Wes Hench',
@@ -565,7 +638,7 @@ export const teamData = [
     scoreboard: false,
   },
   {
-    id: 3,
+    id: 5,
     teamName: 'Gardner 13U',
     headCoach: 'Pete Gardner',
     assistantCoaches: 'Melissa Ryan, Amanda Whitehead',
@@ -741,7 +814,7 @@ export const teamData = [
     scoreboard: false,
   },
   {
-    id: 5,
+    id: 6,
     teamName: 'Norman 12U',
     headCoach: 'Jay Norman',
     assistantCoaches: '',
@@ -850,7 +923,7 @@ export const teamData = [
     scoreboard: false,
   },
   {
-    id: 6,
+    id: 7,
     teamName: 'Warren 12U',
     headCoach: 'Rich Meikle',
     assistantCoaches: 'Denise Brunke-Allen, Jim Householder',
@@ -1013,7 +1086,7 @@ export const teamData = [
     scoreboard: "//gc.com/team-5c85359b955e067a733c24e7/scoreboard?g=5&p=5bafd0a9b7ce48001b2f2705",
   },
   {
-    id: 7,
+    id: 8,
     teamName: 'Gressman 11U',
     headCoach: 'Nick Gressman',
     assistantCoaches: 'Gary Cress, Justin Spear, Dave Contini, Marie Contini',
@@ -1183,7 +1256,7 @@ export const teamData = [
     scoreboard: false,
   },
   {
-    id: 8,
+    id: 9,
     teamName: 'Albertson 10U',
     headCoach: 'Jodi Albertson',
     assistantCoaches: 'Tony Paonessa, Ryan Miller',
@@ -1346,7 +1419,7 @@ export const teamData = [
     scoreboard: false,
   },
   {
-    id: 8,
+    id: 10,
     teamName: 'Homan 8U',
     headCoach: 'Mike Homan',
     assistantCoaches: 'Steve Huddleston, Mike Mesher, Ryan Knapp',

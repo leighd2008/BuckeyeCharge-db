@@ -15,7 +15,7 @@ const Tournaments = ({ indexStart, indexEnd }) => {
               teamData.map((team, j) => {
                 if (j>= indexStart && j< indexEnd){
                   return (
-                      <th >{team.teamName}</th>
+                      <th key={team.id}>{team.teamName}</th>
                   )
                 }
                 return null;
@@ -28,12 +28,12 @@ const Tournaments = ({ indexStart, indexEnd }) => {
             teamData[0].tournaments.map((tournament, i) => {
               return(
                 <tr className="stripe-dark" key={i}>
-                  <td>{teamData[0].tournaments[i].Weekend}</td>
+                  <td >{teamData[0].tournaments[i].Weekend}</td>
                   {
                     teamData.map((team, j) => {
                       if (j>= indexStart && j< indexEnd){
                         return (
-                            <td >{team.tournaments[i].name}</td>
+                            <td key={j} >{team.tournaments[i].name}</td>
                         )
                       }
                       return null;
