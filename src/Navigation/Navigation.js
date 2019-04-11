@@ -75,12 +75,12 @@ render() {
                   <DropdownItem onClick={this.toggle} >
                   {/* <DropdownItem tag={Link} to="/BuckeyeCharge/Norman12U" onClick={this.toggle} > */}
                     <p onClick={() => 
-                      onRouteChange('Norman12U', 'Norman 12U', W12UURLS)} >Norman 12U</p>
+                      onRouteChange('Norman12U', 'Norman 12U', N12UURLS)} >Norman 12U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
-                  {/* <DropdownItem tag={Link} to="/BuckeyeCharge/Warren12U" onClick={this.toggle} > */}
+                  {/* <DropdownItem tag={Link} to="/BuckeyeCharge/Meikle12U" onClick={this.toggle} > */}
                     <p onClick={() => 
-                    onRouteChange('Warren12U', 'Warren 12U', N12UURLS)} >Warren 12U</p>
+                    onRouteChange('Meikle12U', 'Meikle 12U', W12UURLS)} >Meikle 12U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                   {/* <DropdownItem tag={Link} to="/BuckeyeCharge/Gressman11U" onClick={this.toggle} > */}

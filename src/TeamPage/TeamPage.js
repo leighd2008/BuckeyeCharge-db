@@ -16,6 +16,7 @@ const TeamPage = ({teamName, eventUrls}) => {
     const fieldName=`${teamData[index].fieldName}`;
     const fieldAddress1=`${teamData[index].fieldAddress1}`;
     const fieldAddress2=`${teamData[index].fieldAddress2}`;
+    const location=`${teamData[index].location}`;
     const roster=teamData[index].roster;
     const eventboard=teamData[index].eventUrls;
     const photoGallery=teamData[index].photoGallery;
@@ -29,6 +30,7 @@ const TeamPage = ({teamName, eventUrls}) => {
       <Banner
           backgroundImage={imgsrc}
           teamName={teamName}
+          location={location}
         />
       <div>
         <Contact contact1={contact1} contact2={contact2} />

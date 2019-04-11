@@ -9,6 +9,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'dugout.JPG',
     roster: [
@@ -191,6 +192,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'dugout.JPG',
     roster: [{
@@ -300,6 +302,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'dugout.JPG',
     roster: [
@@ -476,6 +479,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'Yoder14U.JPG',
     roster: [
@@ -646,6 +650,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'dugout.JPG',
     roster: [
@@ -822,6 +827,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'dugout.JPG',
     roster: [{
@@ -924,13 +930,14 @@ export const teamData = [
   },
   {
     id: 7,
-    teamName: 'Warren 12U',
+    teamName: 'Meikle 12U',
     headCoach: 'Rich Meikle',
     assistantCoaches: 'Denise Brunke-Allen, Jim Householder',
     teamEmail: 'WarrenBuckeyeCharge @gmail.com',
     fieldName: "Johnson Community Center",
     fieldAddress1: "800 Gillmer Rd",
     fieldAddress2: "Leavittsburg, Ohio 44430",
+    location: "Warren, Ohio",
     googleMapLink: "https://goo.gl/maps/TSZ2T6Ti4oo",
     teamPic: 'Warren12U.jpg',
     roster: [
@@ -1094,6 +1101,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'dugout.JPG',
     roster: [
@@ -1264,6 +1272,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'Albertson10U-1.JPG',
     roster: [
@@ -1427,6 +1436,7 @@ export const teamData = [
     fieldName: "Jedd Park",
     fieldAddress1: "2275 Pickle Rd",
     fieldAddress2: "Akron, Ohio 44312",
+    location: "Akron, Ohio",
     googleMapLink: "https://goo.gl/maps/a9NZ6ZDooJm",
     teamPic: 'Homan8U.JPG',
     roster: [

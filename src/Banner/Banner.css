@@ -3,14 +3,14 @@
   background: no-repeat;
   background-size: contain !important;
   background-color: hsla(0,0%,100%,0.0) !important;  
-  background-position: bottom;
+  background-position: center;
   width: 80vw;
   height: 50vw;
   border: none;
   max-height: 600px;
   max-width: 950px; 
   min-width: 350px;
-  margin: 12vh auto;
+  margin: auto;
 }
 
 /* h2 {
