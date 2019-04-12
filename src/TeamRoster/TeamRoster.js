@@ -1,5 +1,4 @@
 import React from 'react';
-import './TeamRoster.css';
 import { Card, CardTitle } from 'reactstrap';
 
 const TeamRoster = ({ roster }) => {

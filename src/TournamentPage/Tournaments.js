@@ -1,6 +1,5 @@
 import React from 'react';
 import {teamData} from '../TeamPage/teamData'
-import './Tournaments.css';
 import { Card } from 'reactstrap';
 
 const Tournaments = ({ indexStart, indexEnd }) => {
