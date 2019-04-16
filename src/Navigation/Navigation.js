@@ -79,11 +79,11 @@ render() {
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Albertson10U', 'Albertson 10U', A10UURLS)} >Albertson10U</p>
+                      onRouteChange('Albertson10U', 'Albertson 10U', A10UURLS)} >Albertson 10U</p>
                   </DropdownItem>
                   <DropdownItem onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Homan8U', 'Homan 8U', H8UURLS)} >Homan8U</p>
+                      onRouteChange('Homan8U', 'Homan 8U', H8UURLS)} >Homan 8U</p>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
