@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Navigation from './Navigation/Navigation';
 import homeImage from './images/BCLogo-clr.png';
@@ -40,31 +41,52 @@ class App extends Component {
     }
 
   render() {
-    const project = () => {
-      switch(this.state.route) {
-        case "home": return <Home homeImage={this.state.homeImage}/>;
-        case "tournaments": return <TournamentPage />;
-        case "training": return <Training />;
-        case "tryouts": return <TryOuts homeImage={this.state.homeImage}/>;
-        case "Meikle12U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />;
-        case "Cholley16U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />;
-        case "Cavanagh15U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
-        case "Gardner13U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
-        case "Yoder14U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
-        case "Norman12U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
-        case "Gressman11U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
-        case "Albertson10U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
-        case "Homan8U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
-        case "Kaisk16U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
-        case "abpitching": return <ABPitching />
-        default: return <h1>No team match</h1>
-      }
-    }
+    // const project = () => {
+    //   switch(this.state.route) {
+    //     case "home": return <Home homeImage={this.state.homeImage}/>;
+    //     case "tournaments": return <TournamentPage />;
+    //     case "training": return <Training />;
+    //     case "tryouts": return <TryOuts homeImage={this.state.homeImage}/>;
+    //     case "Meikle12U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />;
+    //     case "Cholley16U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />;
+    //     case "Cavanagh15U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+    //     case "Gardner13U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+    //     case "Yoder14U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+    //     case "Norman12U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+    //     case "Gressman11U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+    //     case "Albertson10U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+    //     case "Homan8U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+    //     case "Kaisk16U": return <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName} eventUrls={this.state.eventUrls} />;
+    //     case "abpitching": return <ABPitching />
+    //     default: return <h1>No team match</h1>
+    //   }
+    // }
 
     return (
       <div className="App">
-        <Navigation onRouteChange={this.onRouteChange} />
-        <div>{ project() }</div>
+        {/* <Navigation onRouteChange={this.onRouteChange} /> */}
+        {/* <div>{ project() }</div> */}
+        <BrowserRouter>
+          <Navigation onRouteChange={this.onRouteChange} />
+          {/* <Route exact path="/BuckeyeCharge" component={() => <Home homeImage={this.state.homeImage} />} /> */}
+          <Switch>
+            <Route exact path="/" component={() => <Home homeImage={this.state.homeImage} />} />
+            <Route exact path="/BuckeyeCharge/tournaments" component={() => <TournamentPage />} />
+            <Route exact path="/BuckeyeCharge/training" component={() => <Training />} />
+            <Route exact path="/BuckeyeCharge/tryouts" component={() => <TryOuts homeImage={this.state.homeImage}/>} />
+            <Route exact path="/BuckeyeCharge/Meikle12U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Cholley16U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Cavanagh15U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Gardner13U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Yoder14U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Norman12U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Gressman11U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Albertson10U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Homan8U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/Kaisk16U" component={() => <TeamPage backgroundImage={this.state.backgroundImage} teamName={this.state.teamName}  eventUrls={this.state.eventUrls} />} />
+            <Route exact path="/BuckeyeCharge/abpitching" component={() => <ABPitching />} />
+          </Switch>
+        </BrowserRouter>
       </div>
 
     );
