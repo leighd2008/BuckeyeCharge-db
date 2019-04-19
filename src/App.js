@@ -70,7 +70,7 @@ class App extends Component {
           <Navigation onRouteChange={this.onRouteChange} />
           {/* <Route exact path="/BuckeyeCharge" component={() => <Home homeImage={this.state.homeImage} />} /> */}
           <Switch>
-            <Route exact path="/" component={() => <Home homeImage={this.state.homeImage} />} />
+            <Route exact path="/BuckeyeCharge/" component={() => <Home homeImage={this.state.homeImage} />} />
             <Route exact path="/BuckeyeCharge/tournaments" component={() => <TournamentPage />} />
             <Route exact path="/BuckeyeCharge/training" component={() => <Training />} />
             <Route exact path="/BuckeyeCharge/tryouts" component={() => <TryOuts homeImage={this.state.homeImage}/>} />

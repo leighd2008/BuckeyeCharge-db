@@ -37,7 +37,7 @@ render() {
           <Collapse isOpen={this.state.isOpen} navbar >
             <Nav className="ml-auto" navbar >
               <NavItem >
-                <NavLink tag={Link}  to="/" onClick={this.toggle}>
+                <NavLink tag={Link}  to="/BuckeyeCharge" onClick={this.toggle}>
                   <p onClick={() => onRouteChange('home')} >
                     <br/> HOME
                   </p> 
