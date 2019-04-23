@@ -25,7 +25,7 @@ render() {
     const { onRouteChange } = this.props;
     return (
         <Navbar sticky={'top'} className="navbar navbar-expand-lg navbar-light bg-secondary">
-          <NavbarBrand href = "/BuckeyeCharge" >
+          <NavbarBrand href = "/" >
             <img src={BCLogo}
                 width="60"
                 height="60"
@@ -37,7 +37,7 @@ render() {
           <Collapse isOpen={this.state.isOpen} navbar >
             <Nav className="ml-auto" navbar >
               <NavItem >
-                <NavLink tag={Link}  to="/BuckeyeCharge" onClick={this.toggle}>
+                <NavLink tag={Link}  to="/" onClick={this.toggle}>
                   <p onClick={() => onRouteChange('home')} >
                     <br/> HOME
                   </p> 
@@ -47,76 +47,76 @@ render() {
                 <DropdownToggle tag="h6" nav caret ><br/>TEAMS </DropdownToggle>
                 <DropdownMenu >
                   <DropdownItem 
-                    className='teams' tag={Link} to="/BuckeyeCharge/Cholley16U"
+                    className='teams' tag={Link} to="/Cholley16U"
                     onClick={this.toggle} 
                   >
                     <p onClick={() => 
                       onRouteChange('Cholley16U', 'Cholley 16U', Ch16UURLS)} >Cholley 16U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Kaisk16U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Kaisk16U" onClick={this.toggle} >
                     <p onClick={() => 
                       onRouteChange('Kaisk16U', 'Kaisk 16U', K16UURLS)} >Kaisk 16U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Cavanagh15U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Cavanagh15U" onClick={this.toggle} >
                     <p onClick={() => 
                       onRouteChange('Cavanagh15U', 'Cavanagh 15U', C15UURLS)} >Cavanagh 15U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Yoder14U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Yoder14U" onClick={this.toggle} >
                     <p onClick={() => 
                       onRouteChange('Yoder14U', 'Yoder 14U', Y14UURLS)} >Yoder 14U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Gardner13U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Gardner13U" onClick={this.toggle} >
                     <p onClick={() => 
                       onRouteChange('Gardner13U', 'Gardner 13U', G13UURLS)} >Gardner 13U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Norman12U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Norman12U" onClick={this.toggle} >
                     <p onClick={() => 
                       onRouteChange('Norman12U', 'Norman 12U', N12UURLS)} >Norman 12U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Meikle12U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Meikle12U" onClick={this.toggle} >
                     <p onClick={() => 
                     onRouteChange('Meikle12U', 'Meikle 12U', W12UURLS)} >Meikle 12U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Gressman11U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Gressman11U" onClick={this.toggle} >
                     <p onClick={() => 
                     onRouteChange('Gressman11U', 'Gressman 11U', G11UURLS)} >Gressman 11U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Albertson10U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Albertson10U" onClick={this.toggle} >
                     <p onClick={() => 
                       onRouteChange('Albertson10U', 'Albertson 10U', A10UURLS)} >Albertson 10U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/BuckeyeCharge/Homan8U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Homan8U" onClick={this.toggle} >
                     <p onClick={() => 
                       onRouteChange('Homan8U', 'Homan 8U', H8UURLS)} >Homan 8U</p>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavLink tag={Link} to="/BuckeyeCharge/tournaments" onClick={this.toggle}>
+              <NavLink tag={Link} to="/tournaments" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('tournaments')} >
                   <br/> TOURNAMENTS 
                 </p> 
               </NavLink>
-              <NavLink tag="h6" href="/" onClick={this.toggle}>
+              {/* <NavLink tag="h6" href="/" onClick={this.toggle}>
                 <a href="https://2019buckeyecharge.itemorder.com/sale" target="_blank" rel="noopener noreferrer">
                   <br/> FAN GEAR 
                 </a> 
-              </NavLink>
+              </NavLink> */}
               {/* <NavLink tag="h6" to="/" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('home')} >
                   <br/> SPONSORS 
                 </p> 
               </NavLink> */}
-              <NavLink tag={Link} to="/BuckeyeCharge/training" onClick={this.toggle}>
+              <NavLink tag={Link} to="/training" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('training')} >
                   <br/> TRAINING 
                 </p> 
               </NavLink>
-              <NavLink tag={Link} to="/BuckeyeCharge/tryouts" onClick={this.toggle}>
+              <NavLink tag={Link} to="/tryouts" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('tryouts')} >
                   <br/> TRY-OUTS 
                 </p> 
               </NavLink>
-              <NavLink tag={Link} to="/BuckeyeCharge/abpitching" onClick={this.toggle}>
+              <NavLink tag={Link} to="/abpitching" onClick={this.toggle}>
                 <p onClick={() => onRouteChange('abpitching')} >
                   AB Pitching,<br/> Hitting <br/>and Fitness 
                 </p> 
