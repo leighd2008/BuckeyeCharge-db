@@ -47,47 +47,47 @@ render() {
                 <DropdownToggle tag="h6" nav caret ><br/>TEAMS </DropdownToggle>
                 <DropdownMenu >
                   <DropdownItem 
-                    className='teams' tag={Link} to="/Cholley16U"
+                    className='teams' tag={Link} to="/Team/Cholley16U"
                     onClick={this.toggle} 
                   >
                     <p onClick={() => 
-                      onRouteChange('Cholley16U', 'Cholley 16U', Ch16UURLS)} >Cholley 16U</p>
+                      onRouteChange('Cholley16U', Ch16UURLS)} >Cholley 16U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Kaisk16U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Kaisk16U" onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Kaisk16U', 'Kaisk 16U', K16UURLS)} >Kaisk 16U</p>
+                      onRouteChange('Kaisk16U', K16UURLS)} >Kaisk 16U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Cavanagh15U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Cavanagh15U" onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Cavanagh15U', 'Cavanagh 15U', C15UURLS)} >Cavanagh 15U</p>
+                      onRouteChange('Cavanagh15U', C15UURLS)} >Cavanagh 15U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Yoder14U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Yoder14U" onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Yoder14U', 'Yoder 14U', Y14UURLS)} >Yoder 14U</p>
+                      onRouteChange('Yoder14U', Y14UURLS)} >Yoder 14U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Gardner13U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Gardner13U" onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Gardner13U', 'Gardner 13U', G13UURLS)} >Gardner 13U</p>
+                      onRouteChange('Gardner13U', G13UURLS)} >Gardner 13U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Norman12U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Norman12U" onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Norman12U', 'Norman 12U', N12UURLS)} >Norman 12U</p>
+                      onRouteChange('Norman12U', N12UURLS)} >Norman 12U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Meikle12U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Meikle12U" onClick={this.toggle} >
                     <p onClick={() => 
-                    onRouteChange('Meikle12U', 'Meikle 12U', W12UURLS)} >Meikle 12U</p>
+                    onRouteChange('Meikle12U', W12UURLS)} >Meikle 12U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Gressman11U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Gressman11U" onClick={this.toggle} >
                     <p onClick={() => 
-                    onRouteChange('Gressman11U', 'Gressman 11U', G11UURLS)} >Gressman 11U</p>
+                    onRouteChange('Gressman11U', G11UURLS)} >Gressman 11U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Albertson10U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Albertson10U" onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Albertson10U', 'Albertson 10U', A10UURLS)} >Albertson 10U</p>
+                      onRouteChange('Albertson10U', A10UURLS)} >Albertson 10U</p>
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/Homan8U" onClick={this.toggle} >
+                  <DropdownItem tag={Link} to="/Team/Homan8U" onClick={this.toggle} >
                     <p onClick={() => 
-                      onRouteChange('Homan8U', 'Homan 8U', H8UURLS)} >Homan 8U</p>
+                      onRouteChange('Homan8U', H8UURLS)} >Homan 8U</p>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
