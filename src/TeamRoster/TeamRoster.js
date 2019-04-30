@@ -19,8 +19,8 @@ const TeamRoster = ({ roster }) => {
             roster.map((player, i) => {
               return (
                 <tr className="stripe-dark" key={i}>
-                  <td>{player.jerseynum}</td>
-                  <td>{player.firstname}</td>
+                  <td>{player.jersey_num}</td>
+                  <td>{player.firstName}</td>
                   <td>{player.positions}</td>
                 </tr>
               )

@@ -3,15 +3,15 @@ import Tournaments from './Tournaments';
 import { Card, CardTitle } from 'reactstrap';
 
 const TournamentPage = () => {
-  let indexStart = 1;
-  let indexEnd = 5;
+  let indexStart = 0;
+  let indexEnd = 4;
 
   return (
     <Card className="ma3 roster" style={{ backgroundColor: '#6c757d', borderColor: 'red', borderWidth: '4px', minWidth:'48vw' }}>
       <CardTitle tag="h1">Tournaments</CardTitle>
       <Tournaments indexStart={indexStart} indexEnd={indexEnd} />
-      <Tournaments indexStart={5} indexEnd={8} />
-      <Tournaments indexStart={8} indexEnd={11} />
+      <Tournaments indexStart={4} indexEnd={7} />
+      <Tournaments indexStart={7} indexEnd={10} />
     </Card>
   )
 }
