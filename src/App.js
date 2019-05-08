@@ -17,10 +17,7 @@ library.add(faArrowRight, faArrowLeft);
 const initialState = {
   homeImage: homeImage,
   backgroundImage: homeImage,
-  // teamName: "",
   route: "home",
-  // index: 0,
-  // team: '',
   eventUrls: '',
 }
 
@@ -39,7 +36,6 @@ class App extends Component {
           homeImage: homeImage,
           eventUrls: eventUrls,
         });
-        console.log(eventUrls)
       }
     }
 

@@ -75,7 +75,7 @@ class TeamPage extends Component  {
           {scoreboard === false
             ? null
             : <div>
-                <ScoreBoard scoreboard={scoreboard} scoreboardlink={scoreboardlink} />
+                <ScoreBoard scoreboardlink={scoreboardlink} />
               </div>
           }
           {eventboard === true
