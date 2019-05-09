@@ -7,7 +7,7 @@ import homeImage from '../images/ABPitching.jpg'
 import './ABPitching.css';
 
 const ABPitching = () => {
-  const contact1="Email: buckeyechargefastpitch @gmail.com"
+  const contact1="Email: abpitching@gmail.com"
   const contact2="Phone: 330-606-9887"
   const fieldName="AB Pitching, Hitting and Fitness, LLC"
   const fieldAddress1="2420 Wedgewood Dr"
