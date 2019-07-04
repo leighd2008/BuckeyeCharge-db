@@ -1,17 +1,7 @@
-h5 {
-  font-size: 4vw !important;
-}
-
 .card {
   background-color: #6c757d00 !important;
   border: 5px solid #6c757d !important;
   border: none !important;
-  max-width: 800px;
+  max-width: 800%;
   margin: auto !important;
 }
-
-/* @media screen and (min-width: 850px) {
-  h5 {
-    font-size: 30px !important;
-  }
-} */

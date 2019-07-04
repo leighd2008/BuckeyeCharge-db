@@ -8,7 +8,7 @@ import BC12UTeams from '../images/BC12UTEAMS.png';
 import './Home.css';
 
 const Home = ({ homeImage }) => {
-  const contact1="Email: buckeyechargefastpitch@gmail.com"
+  const contact1="buckeyechargefastpitch @gmail.com"
   const contact2="Phone: 740-319-1727"
   const fieldName="Jedd Park"
   const fieldAddress1="2275 Pickle Rd"

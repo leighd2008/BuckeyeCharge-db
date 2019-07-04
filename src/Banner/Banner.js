@@ -2,12 +2,12 @@ import React from 'react';
 import { Jumbotron } from 'reactstrap';
 import './Banner.css';
 
-const Banner = ({ teamName, backgroundImage }) => {
+const Banner = ({ teamName, backgroundImage, location }) => {
   return (
     <div >
-      {console.log('background', backgroundImage)}
+      <h1 className="ma0 pa0">{teamName} {location}</h1>
       <Jumbotron style={{ backgroundImage: `url(${backgroundImage })` }}>
-        <h1 className="ma0 pa0">{teamName}</h1>
+        
       </Jumbotron>
     </div>
   );
